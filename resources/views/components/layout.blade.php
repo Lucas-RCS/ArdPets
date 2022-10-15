@@ -10,7 +10,7 @@
 
 </head>
 <body>
- <div class="container">
+ <div class="container-sm form-control ">
 
     <h1>{{ $title }}</h1>
 
