@@ -1,5 +1,6 @@
 <x-layout title="Criar Conta">
-    <form>
+    <form method="post" action="/criar-conta/criado">
+        @csrf
         <div class="form-floating mb-3">
             <input type="text" name="CreateUserName" class="form-control" id="floatingInput" placeholder="Nome" required>
             <label for="floatingInput">Nome</label>

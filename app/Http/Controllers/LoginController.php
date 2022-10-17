@@ -13,4 +13,15 @@ class LoginController extends Controller
     public function create() {
         return view('User.create');
     }
+
+    public function store(Request $request)
+    {
+        $username = [
+            $request->input('CreateUserName'),
+            $request->input('CreateUserEmail'),
+            $request->input('CreateUserPasswd')
+        ];
+        return redirect('/iniciar-sessao');
+
+    }
 }
