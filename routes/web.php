@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DogController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
@@ -25,3 +26,5 @@ Route::get('/dog/create', [DogController::class,'create']);
 Route::get('/iniciar-sessao', [LoginController::class,'index']);
 Route::get('/criar-conta', [LoginController::class,'create']);
 Route::post('/criar-conta/criado', [LoginController::class,'store']);
+
+Route::any('/principal',[HomeController::class,'index']);

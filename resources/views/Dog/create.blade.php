@@ -2,13 +2,13 @@
     <form class="row g-3" action="" method="POST">
         <div class="col-md-6">
             <label class="form-label">Nome</label>
-            <input class="form-control" type="text" name="nome" id="nome" >
+            <input class="form-control" type="text" name="nome" id="nome">
         </div>
         <div class="col-12">
             <label class="form-label">Raça(s)</label>
             <div class="input-group">
-                <input class="form-control" placeholder="Raça" type="text" name="raca1" id="raca1" >
-                <input class="form-control" placeholder="Raça" type="text" name="raca2" id="raca2" >
+                <input class="form-control" placeholder="Raça" type="text" name="raca1" id="raca1">
+                <input class="form-control" placeholder="Raça" type="text" name="raca2" id="raca2">
             </div>
         </div>
         <div class="col-auto">

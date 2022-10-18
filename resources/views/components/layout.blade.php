@@ -1,21 +1,15 @@
-<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="{{ asset('css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/csslogin.css')}}">
     <title>{{ $title }}</title>
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
 </head>
-<body class="pt-xxl-5">
- <div class="container-sm form-control ">
-
-    <h1>{{ $title }}</h1>
-
+<body>
 {{ $slot }}
-
- </div>
 </body>
 </html>

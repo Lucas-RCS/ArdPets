@@ -1,0 +1,295 @@
+div{
+    display:flex;
+}
+body {
+    background-color: #d3fbe5;
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+
+}
+
+.bg-all{
+    background-color: white;
+    height: 80vh;
+    top: 10vh;
+    border-radius: 2%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+/* DIV DA ESQUERDA */
+.div-left{
+    background-color: #19db70;
+    border-bottom-left-radius: 2%;
+    border-top-left-radius: 2%;
+    display: block;
+}
+
+.div-img-left{
+    margin-top: 4%;
+    height: 10%;
+}
+
+.titulo{
+    margin-top: 30%;
+}
+
+.tituloCad {
+    margin-top: 10%;
+}
+
+
+h1{
+    color: white;
+    padding-left: 1%;
+    font-size: 30px;
+}
+
+hr{
+    background-color: white;
+    size: 40px;
+    width: 20%;
+    margin-left: 6%;
+    margin-top: 6%;
+    padding-top: 1%;
+}
+
+.login-inp {
+    width: 100%;
+    border-color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0%;
+
+    margin-top: 5%;
+    color: #0a5f55;
+    padding:1px 10px;
+    color: white;
+    background-color: #19db70;
+
+}
+
+form{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px 4%;
+}
+
+form div.single-input{
+    position: relative;
+    margin: 30px 0;
+}
+
+form div.single-input label{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    color: white;
+    margin-left: 5%;
+    cursor: text;
+    transition: all 0.5s ease-in-out;
+    background-color: #19db70;
+}
+
+form div.single-input .input{
+    width: 85%;
+    padding: 5px;
+    border: 0;
+    border-bottom: 2px solid white;
+    outline: 0;
+    font-size: 16px;
+    margin-left: 5%;
+    transition: all 0.5s ease-in-out;
+    background-color: #19db70;
+}
+
+form div.single-input .input:focus,
+form div.single-input .input:valid{
+    border-bottom: 2px solid #024b23;
+}
+
+form div.single-input .input:focus ~ label,
+form div.single-input .input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: #024b23;
+}
+
+
+
+.btn-outline-secondary .loginbtn:focus,
+.btn-outline-secondary .loginbtn.focus {
+    color: #024b23 !important;
+    background-color: #024b23 !important;
+    border-color: #024b23 !important;
+}
+
+.loginbtn:hover {
+    background-color: #024b23 !important;
+    border-color: #024b23 !important;
+}
+
+.loginbtn {
+    border-color: white;
+    color: white;
+    padding: 3px;
+    width: 100%;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1em;
+    margin-left: 6%;
+}
+
+
+.btn-outline-secondary .limparbtn:focus,
+.btn-outline-secondary .limparbtn.focus {
+    color: #b91919 !important;
+    background-color: #b91919 !important;
+    border-color: #b91919!important;
+}
+
+.limparbtn:hover {
+    background-color: #b91919 !important;
+    border-color: #b91919 !important;
+}
+
+.limparbtn {
+    border-color: white;
+    color: white;
+    padding: 3px;
+    width: 100%;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1em;
+    margin-left: 6%;
+}
+
+
+.redes-sociais{
+    margin-top: 115%;
+    margin-left: 10%;
+}
+.redes-sociaisCad{
+    margin-top: 135%;
+    margin-left: 10%;
+}
+.redes-sociais img{
+    width: 35%;
+}
+
+/* DIV DA DIREITA */
+.div-right{
+    display: block;
+}
+
+.opcoes{
+    color: #808080;
+
+}
+
+.opcoes:hover{
+    color: #024b23;
+}
+
+.opcoes p{
+    font-size: 5px;
+    text-align: right;
+}
+
+p{
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+.wiki{
+    margin-left: 40%;
+}
+.sn{
+    margin-left: 6%;
+}
+.snCad{
+    margin-left: 6%;
+    width: 30%;
+}
+
+.btn-voltar{
+    width: 15%;
+    margin-left: 35%;
+}
+
+.cadastrobtn {
+    border-color: #19db70;
+    background-color: #19db70;
+    color: white;
+    width: 100%;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 100px;
+    font-weight: bold;
+    font-size: 2.2vmin;
+    margin-left: 35%;
+}
+.cadastrobtn:hover {
+    background-color: #024b23 !important;
+    border-color: white !important;
+}
+
+.nameAP{
+    margin-top: 15%;
+}
+.nameAP p{
+    font-size: 30px;
+    color: #19db70;
+}
+
+.hr-name hr{
+    background-color: #19db70;
+    size: 40px;
+    width: 20%;
+    margin-top: -4%;
+    margin-left: 27%;
+}
+.hr-name{
+    height: 1%;
+}
+
+.textin p{
+    color: #808080;
+    font-size: 15px;
+}
+
+.lermaisbtn {
+    border-color: #19db70;
+    background-color: #19db70;
+    color: white;
+    width: 100%;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1em;
+}
+.lermaisbtn:hover {
+    background-color: #024b23 !important;
+    border-color: white !important;
+}
+
+
+/*cores:
+verde: #48ff9a;
+verde claro: #abffd1;
+verde mais claro: #d3fbe5;
+verde escuro: #19db70;
+verde  mais escuro: #024b23;
+vermelho: #b91919;
+cinza: #808080;
+*/

@@ -1,0 +1,143 @@
+div{
+    display:flex;
+}
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+   
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+
+}
+
+
+.navbar{
+    background-color: #024b23 !important;
+    font-size: 18px;
+}
+
+.navbar-brand {
+    width: 5%;
+}
+.navbar-brand img{
+    width: 60%;
+    margin-left: 10%;
+}
+
+.btn-sair{
+    width: 8%;
+    color: white;
+    border-color: transparent;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    border-radius: 15px;
+    font-size: 18px;
+    padding-left: -2%;
+    padding-right: -2%;
+}  
+.btn-sair img{
+    width: 35%;
+    margin-top: -3%;
+    margin-left: 7%;
+}
+
+
+.meio-1{
+    height: 70vh;
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro-pet{
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    background-color: white;
+    margin-left: 10%;
+    margin-top: 7%;
+    border-radius: 15px;
+}
+
+.cadastro-pet img{
+    width: 100%;
+    height: 55%;
+    border: 2px solid #19db70;
+    margin-top: 40%;
+    margin-left: 5%;
+}
+
+hr{
+    height: 89%;
+    width: .1vw;
+    border-width:0;
+    background-color: #19db70;
+}
+
+
+
+.frase-cdt h1{
+    font-size: 50px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    line-height: 75%;
+    margin-top: 25%;
+}
+
+.frase-cdt p{
+    font-size: 18px bold;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    line-height: 75%;
+    margin-top: 68%;
+    position: absolute;
+}
+
+
+.cadastrobtn {
+    border-color: #19db70;
+    background-color: #19db70;
+    color: white;
+    width: 70%;   
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 100px;
+    font-weight: bold;
+    font-size: 2.2vmin;
+    margin-left: 10%;
+    margin-top: 90%;
+    box-shadow: 0px 0px 3px #024b23;
+    position: absolute;
+}
+.cadastrobtn:hover {
+    background-color: #024b23 !important;
+    border-color: transparent !important;
+}
+
+
+
+
+
+
+/*cores:
+verde: #48ff9a;
+verde claro: #abffd1;
+verde mais claro: #d3fbe5;
+verde escuro: #19db70;
+verde  mais escuro: #024b23;
+verde mais escuro ainda: #013016;
+vermelho: #b91919;
+cinza: #808080;
+*/
