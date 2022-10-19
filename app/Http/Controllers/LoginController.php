@@ -16,12 +16,13 @@ class LoginController extends Controller
 
     public function store(Request $request)
     {
+        // Pegando as informacoes do usuario
         $username = [
             $request->input('CreateUserName'),
             $request->input('CreateUserEmail'),
             $request->input('CreateUserPasswd')
         ];
-        return redirect('/iniciar-sessao');
 
+        return redirect('/iniciar-sessao');
     }
 }
