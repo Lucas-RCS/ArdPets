@@ -28,5 +28,5 @@ Route::get('/iniciar-sessao', [LoginController::class,'index']);
 Route::get('/criar-conta', [LoginController::class,'create']);
 Route::post('/criar-conta/criado', [LoginController::class,'store']);
 
-// páginas principais  
-Route::any('/principal',[HomeController::class,'index']);
+// páginas principais
+Route::get('/principal',[HomeController::class,'index']);

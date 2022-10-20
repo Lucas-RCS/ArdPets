@@ -53,7 +53,7 @@
                         <div class="wiki pt-4"><a href="">
                                 <p class="opcoes">WikiPets</p>
                             </a></div>
-                        <div class="sn pt-4"><a href="">
+                        <div class="snCad pt-4"><a href="">
                                 <p class="opcoes">Sobre Nós</p>
                             </a></div>
                         <div class="pt-3">

@@ -16,9 +16,9 @@
                             <label for="Nome">Nome</label>
                         </div>
                         <div class="single-input">
-                            <input type="text" class="input" id="senha" name="senha" maxlength="10" required>
+                            <input type="password" class="input" id="senha" name="senha" maxlength="10" required>
                             <label for="Senha">Senha</label>
-                        </div>
+                       </div>
                         <div class="botao col-12">
 
                             <div class="login-btn col-5">
@@ -29,7 +29,6 @@
                                 <button type="reset" value="limpar"
                                         class="btn btn-outline-secondary px-3 limparbtn ">Limpar</button>
                             </div>
-
                         </div>
                     </form>
                     <div class="redes-sociais col-12">
