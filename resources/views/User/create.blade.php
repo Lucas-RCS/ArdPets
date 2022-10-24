@@ -31,7 +31,7 @@
 
                             <div class="login-btn col-6">
                                 <button type="submit" value="Enviar" name="enviarbtn"
-                                        class="btn btn-outline-secondary px-3 loginbtn ">Login
+                                        class="btn btn-outline-secondary px-3 loginbtn ">Criar
                                 </button>
                             </div>
                             <div class="limpar-btn col-6">

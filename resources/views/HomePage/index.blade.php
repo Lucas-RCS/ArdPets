@@ -30,36 +30,36 @@
                                 </div>
                                 <div class="modal-body">
 
-                                    <form>
+                                    <form method="post" action="/pet/store">
+                                        @csrf
                                         <div class="form-group">
                                             <label for="exampleFormControlInput1">Nome do Pet</label>
-                                            <input type="text" class="form-control " id="exampleFormControlInput1" placeholder="Nome">
+                                            <input type="text" name="CreatePetName" class="form-control " id="exampleFormControlInput1" placeholder="Nome">
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleFormControlSelect1">Porte do Animal</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                <option>Nenhum</option>
-                                                <option>Mini</option>
-                                                <option>Pequeno</option>
-                                                <option>Médio</option>
-                                                <option>Grande</option>
+                                            <select  name="CreatePetPorte" class="form-control" id="exampleFormControlSelect1">
+                                                <option value="null">Nenhum</option>
+                                                <option value="mini">Mini</option>
+                                                <option value="pequeno">Pequeno</option>
+                                                <option value="medio">Médio</option>
+                                                <option value="grande">Grande</option>
                                             </select>
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleFormControlInput1">Idade do Pet</label>
-                                            <input type="number" class="form-control " id="exampleFormControlInput1" placeholder="Idade">
+                                            <input type="number" name="CreatePetIdade" class="form-control " id="exampleFormControlInput1" placeholder="Idade">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="exampleFormControlFile1">Insira a foto de seu Pet</label>
-                                            <input type="file" class="form-control-file ml-4" id="exampleFormControlFile1">
+                                            <input type="file" name="CreatePetFoto" class="form-control-file ml-4" id="exampleFormControlFile1">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                            <button type="submit" class="btn btn-success ">Enviar</button>
                                         </div>
                                     </form>
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                                    <button type="button" class="btn btn-success ">Enviar</button>
                                 </div>
                             </div>
                         </div>

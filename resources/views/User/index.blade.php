@@ -4,7 +4,7 @@
             <div class="col-10 offset-1 bg-all">
                 <div class="col-4 div-left">
                     <div class="div-img-left">
-                        <img src="../img/logo_teste.png" alt="Logo-ArdPets">
+                        <img src="{{ asset('img/logo_teste.png') }} alt="Logo-ArdPets">
                     </div>
                     <div class="titulo">
                         <h1>Login</h1>
@@ -12,11 +12,11 @@
                     </div>
                     <form method="post" action="#">
                         <div class="single-input">
-                            <input type="text" class="input" id="nome" name="nome" maxlength="25" required>
+                            <input type="text" class="input" id="nome" name="IndexUserName" maxlength="25" required>
                             <label for="Nome">Nome</label>
                         </div>
                         <div class="single-input">
-                            <input type="password" class="input" id="senha" name="senha" maxlength="10" required>
+                            <input type="password" class="input" id="senha" name="IndexUserPasswd" maxlength="10" required>
                             <label for="Senha">Senha</label>
                        </div>
                         <div class="botao col-12">

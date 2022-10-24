@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class LoginController extends Controller
 {
@@ -19,10 +20,9 @@ class LoginController extends Controller
         // Pegando as informacoes do usuario
         $username = [
             $request->input('CreateUserName'),
-            $request->input('CreateUserEmail'),
+            $request->input('CreateUserCPF'),
             $request->input('CreateUserPasswd')
         ];
-
         return redirect('/iniciar-sessao');
     }
 }
