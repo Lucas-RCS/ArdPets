@@ -26,8 +26,9 @@ Route::get('/dog/create', [DogController::class,'create']);
 
 //  páginas  que criar conta e login do usuário
 Route::get('/iniciar-sessao', [LoginController::class,'index']);
+Route::post('/acesso', [LoginController::class,'login']);
 Route::get('/criar-conta', [LoginController::class,'create']);
-Route::post('/criar-conta/criado', [LoginController::class,'store']);
+Route::post('/criado', [LoginController::class,'store']);
 
 // páginas principais
 Route::get('/principal',[HomeController::class,'index']);

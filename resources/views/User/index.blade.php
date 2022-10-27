@@ -4,13 +4,14 @@
             <div class="col-10 offset-1 bg-all">
                 <div class="col-4 div-left">
                     <div class="div-img-left">
-                        <img src="{{ asset('img/logo_teste.png') }} alt="Logo-ArdPets">
+                        <img src="{{asset('img/logo_teste.png')}}" alt="Logo-ArdPets">
                     </div>
                     <div class="titulo">
                         <h1>Login</h1>
                         <hr>
                     </div>
-                    <form method="post" action="#">
+                    <form method="post" action="/acesso">
+                        @csrf
                         <div class="single-input">
                             <input type="text" class="input" id="nome" name="IndexUserName" maxlength="25" required>
                             <label for="Nome">Nome</label>

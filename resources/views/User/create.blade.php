@@ -1,6 +1,5 @@
 <x-layout title="Cadastro">
 
-    <body>
     <main>
         <div class="container">
             <div class="col-10 offset-1 bg-all">
@@ -12,14 +11,14 @@
                         <h1>Cadastro</h1>
                         <hr>
                     </div>
-                    <form method="post" action="criar-conta/criado">
+                    <form method="post" action="/criado">
                         @csrf
                         <div class="single-input">
                             <input type="text" class="input" id="nome" name="CreateUserName" maxlength="25" required>
                             <label for="Nome">Nome</label>
                         </div>
                         <div class="single-input">
-                            <input type="number" class="input" id="nome" name="CreateUserCPF" maxlength="14" required>
+                            <input type="text" class="input" id="nome" name="CreateUserCPF" maxlength="14" required>
                             <label for="cpf-cnph">CPF/CNPJ</label>
                         </div>
                         <div class="single-input">
@@ -84,7 +83,4 @@
             </div>
         </div>
     </main>
-    </body>
-
-    </html>
 </x-layout>

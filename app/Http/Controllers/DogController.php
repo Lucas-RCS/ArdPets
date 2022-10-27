@@ -20,4 +20,12 @@ class DogController extends Controller
     public function create () {
         return view('Dog.create');
     }
+
+    public function store() {
+
+        $sql = "insert into dono values (?,?,?)";
+        DB::insert($sql,$user);
+        //return redirect('/iniciar-sessao');
+    }
+    }
 }
