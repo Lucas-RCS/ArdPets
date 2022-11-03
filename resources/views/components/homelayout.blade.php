@@ -13,7 +13,7 @@
 <body>
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-        <a class="navbar-brand" href="#"><img src="../img/logo_teste.png" alt="ArdPet"></a>
+        <a class="navbar-brand" href="#"><img src="{{ asset('img/logo_teste_escuro.png')}}" alt="ArdPet"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -43,8 +43,10 @@
                 </li>
 
             </ul>
-            <button class="btn btn-outline-success my-2 my-sm-0 btn-sair" type="submit">SAIR <img
-                    src="{{asset('img/opcao-de-sair.png')}}" alt=""></button>
+            <form action="/logout">
+                <button class="btn btn-outline-success my-2 my-sm-0 btn-sair" type="submit">SAIR <img
+                        src="{{asset('img/opcao-de-sair.png')}}" alt=""></button>
+            </form>
         </div>
     </nav>
 </header>

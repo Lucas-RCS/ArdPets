@@ -3,13 +3,16 @@
         <section class="meio-1">
             <div class="cadastro-pet col-4">
                 <div class="col-5">
-                    <img src="{{ asset('img/logo_teste_verde.png') }}" class="img-fluid rounded-circle" alt="Foto_Logo_ArdPet">
+                    <img src="{{ asset('img/logo_teste_escuro.png') }}" class="img-fluid rounded-circle" alt="Foto_Logo_ArdPet">
                 </div>
                 <hr>
                 <div class="col-6 pet-cdt">
                     <div class="frase-cdt">
-                        <h1>Cadastre seu Pet</h1>
-                        <p>Nós iremos facilitar a sua vida e a do seu Pet.</p>
+                        @foreach($Pets as $pet)
+                        <h1>{{ $pet->nome }}</h1>
+                        <p>{{ $pet->porte }}</p>
+                        <p>{{ $pet->idade }}</p>
+                        @endforeach
                     </div>
                     <!-- Botão para acionar modal -->
                     <button type="button" class="btn btn-primary cadastrobtn" data-toggle="modal"
