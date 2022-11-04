@@ -6,7 +6,7 @@
             <div class="col-10 offset-1 bg-all">
                 <div class="col-4 div-left">
                     <div class="div-img-left">
-                        <img src="{{asset('img/logo_teste.png')}}" alt="Logo-ArdPets">
+                        <img src="{{asset('img/LOGO_ARD-PETS-branca.png')}}" alt="Logo-ArdPets">
                     </div>
                     <div class="titulo">
                         <h1>Cadastro</h1>
