@@ -22,22 +22,20 @@ class LoginController extends Controller
 
         // Pegando as informacoes do usuario
         $User = [
-            $request->input('CreateUserName'),
-            $request->input('CreateUserCPF'),
+            $request->input('CreateUserEmail'),
             $request->input('CreateUserPasswd')
         ];
 
-        $Sql = "insert into dono (nome,cpf,senha) values (?,?,?)";
+        $Sql = "insert into dono (email,senha) values (?,?)";
         DB::insert($Sql, $User);
         return redirect('/iniciar-sessao');
     }
 
     public function login(Request $request)
     {
-        $User = [$request->input('IndexUserName')];
-        $Sql = "select id,nome,senha from dono where nome=?";
+        $User = [$request->input('IndexUserEmail')];
+        $Sql = "select id,email,senha from dono where email=?";
         $NewNome = DB::select($Sql, $User);
-
         foreach ($NewNome as $name) {
 
             $Aux = array("id" => $name->id);
@@ -45,7 +43,7 @@ class LoginController extends Controller
             $file = fopen('UserJson.json', 'w');
             fwrite($file, $AuxJson);
 
-            if ($name->nome == $request->input('IndexUserName') && $name->senha == $request->input('IndexUserPasswd'))
+            if ($name->email == $request->input('IndexUserEmail') && $name->senha == $request->input('IndexUserPasswd'))
                 return redirect('/principal');
             else
                 return redirect('/iniciar-sessao');

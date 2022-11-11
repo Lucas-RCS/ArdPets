@@ -11,7 +11,7 @@
                         @foreach($Pets as $pet)
                         <h1>{{ $pet->nome }}</h1>
                         <p>{{ $pet->porte }}</p>
-                        <p>{{ $pet->idade }}</p>
+                        <p>{{ $pet->porte }}</p>
                         @endforeach
                     </div>
                     <!-- Botão para acionar modal -->
@@ -57,6 +57,10 @@
                                         <div class="form-group">
                                             <label for="exampleFormControlFile1">Insira a foto de seu Pet</label>
                                             <input type="file" name="CreatePetFoto" class="form-control-file ml-4" id="exampleFormControlFile1">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlFile1">Hora:</label>
+                                            <input type="time"  name="CreatePetTime" class="form-control">
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
