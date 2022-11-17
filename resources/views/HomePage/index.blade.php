@@ -58,9 +58,9 @@
                                             <label for="exampleFormControlFile1">Insira a foto de seu Pet</label>
                                             <input type="file" name="CreatePetFoto" class="form-control-file ml-4" id="exampleFormControlFile1">
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group" data-date-format="HH:mm">
                                             <label for="exampleFormControlFile1">Hora:</label>
-                                            <input type="time"  name="CreatePetTime" class="form-control">
+                                            <input type="time" name="CreatePetTimer" >
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -80,5 +80,6 @@
 
     <script src="{{ asset('js/jquery-3.5.1.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.bundle.min.js') }} "></script>
+
 </x-homelayout>
 <!-- Hello World!-->
