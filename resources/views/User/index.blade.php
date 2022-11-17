@@ -13,7 +13,7 @@
                     <form method="post" action="/acesso">
                         @csrf
                         <div class="single-input">
-                            <input type="text" class="input" id="nome" name="IndexUserName" maxlength="25" required>
+                            <input type="text" class="input" id="nome" name="IndexUserEmail" maxlength="25" required>
                             <label for="Nome">Nome</label>
                         </div>
                         <div class="single-input">
@@ -79,7 +79,7 @@
                                             <br>
                                             Sendo Utiliado por donos de Pets que precisem ganhar um pouco mais de tempo no seu dia a dia,
                                             para que eles nao tenham tantas preocupaçoes em alimentar manualmente seus Pets.
-                                            
+
                                         </p>
                                     </div>
                                 </div>

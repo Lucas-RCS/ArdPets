@@ -23,15 +23,8 @@ class HomeController extends Controller
         if (DB::select($Sql, [$UserJson->id]) != null) {
             $Pet = DB::select($Sql, [$UserJson->id]);
             return view('HomePage.index')->with('Pets', $Pet);
-        } else {
-            $Pet = [
-               "nome" => "Cadastre seu Pet",
-               "porte" => "Nós iremos facilitar a sua vida e a do seu Pet",
-               "idade" => " "
-            ];
-            return view('HomePage.index')->with('Pets', $Pet);
-        }
-
+        } else
+            return view('HomePage.index')->with('Pets', [1]);
     }
 
     public function logout()

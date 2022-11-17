@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' type='text/css' media='screen' href='../css/bootstrap.min.css'>
-    <link rel="stylesheet" type="text/css" href="../css/paginicialcss.css">
+    <link rel='stylesheet' type='text/css' media='screen' href="{{asset('css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/paginicialcss.css')}}">
     <title>Pag Inicial</title>
 </head>
 
@@ -15,7 +15,7 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="../img/LOGO_ARD-PETS-branca.png" alt="ArdPet">ArdPets</a>
+                    <a class="navbar-brand" href="#"><img src="{{ asset('img/LOGO_ARD-PETS-branca.png')}}" alt="ArdPet">ArdPets</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -43,9 +43,9 @@
                             </li>
 
                         </ul>
-                        <button class="btn btn-outline-primary my-2 my-sm-0 btn-sair" data-toggle="modal" 
-                        data-target="#ExemploModalCentralizado2" type="submit"><img src="../img/perfil.png" alt="Perfil"></button>
-                        
+                        <button class="btn btn-outline-primary my-2 my-sm-0 btn-sair" data-toggle="modal"
+                        data-target="#ExemploModalCentralizado2" type="submit"><img src="{{ asset('img/perfil.png') }}"alt="Perfil"></button>
+
                         <div class="modal fade" id="ExemploModalCentralizado2" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
@@ -61,7 +61,7 @@
                                             <label for="exampleFormControlInput1">Nome do Perfil</label>
                                             <input type="text" class="form-control " id="exampleFormControlInput1" placeholder="Novo Nome">
                                         </div>
-                                       
+
                                         <div class="form-group">
                                             <label for="exampleFormControlInput1">Senha</label>
                                             <input type="password" class="form-control " id="exampleFormControlInput1" placeholder="Nova Senha">
@@ -76,8 +76,11 @@
                             </div>
                         </div>
                     </div>
+                        <form class="btn btn-outline-success my-2 my-sm-0 btn-sair" method="post" action="/logout">
+                            @csrf
+                            <button type="submit"><img src="{{asset('img/opcao-de-sair.png')}}" alt="Sair"></button>
+                        </form>
 
-                        <button class="btn btn-outline-success my-2 my-sm-0 btn-sair" type="submit"><img src="../img/opcao-de-sair.png" alt="Sair"></button>
                     </div>
                 </div>
             </nav>
@@ -87,13 +90,16 @@
         <section class="meio-1">
             <div class="cadastro-pet col-4">
                 <div class="col-5">
-                    <img src="../img/LOGO_ARD-PETS.png" class="" alt="Foto_Logo_ArdPet">
+                    <img src="{{asset('img/LOGO_ARD-PETS.png')}}" class="" alt="Foto_Logo_ArdPet">
                 </div>
                 <hr>
                 <div class="col-6 pet-cdt">
                     <div class="frase-cdt">
-                        <h1>Cadastre seu Pet</h1>
-                        <p>Nós iremos facilitar a sua vida e a do seu Pet.</p>
+                        @foreach($Pets as $pet)
+                            <h1>{{ $pet->nome }}</h1>
+                            <p>{{ $pet->porte }}</p>
+                            <p>{{ $pet->idade }}</p>
+                        @endforeach
                     </div>
 
                     <!-- Botão para acionar modal -->
@@ -163,70 +169,70 @@
         <div class="sn">
                 <div class="mt-4 ml-5 p-3 text-center">
                     <div class="card pessoa" style="width: 15rem;">
-                        <img class="card-img-top" src="../img/cezar.jpg" alt="Imagem de capa do card">
+                        <img class="card-img-top" src="{{asset('img/cezar.jpg')}}" alt="Imagem de capa do card">
                         <div class="card-body">
                             <h5 class="card-title">Cezar Aparecido</h5>
                             <p class="card-text">Desenvolvimento do Protótipo em Arduino</p>
                             <hr>
-                            <a href="#" class="img-sn"><img src="../img/facebook_verde.png" alt="Facebook"></a>
-                            <a href="#" class="img-sn"><img src="../img/instagram_verde.png" alt="instagram"></a>
-                            <a href="#" class="img-sn"><img src="../img/twitter_verde.png" alt="Twitter"></a>
+                            <a href="#" class="img-sn"><img src="{{asset('img/facebook_verde.png')}}" alt="Facebook"></a>
+                            <a href="#" class="img-sn"><img src="{{asset('img/instagram_verde.png')}}" alt="instagram"></a>
+                            <a href="#" class="img-sn"><img src="{{asset('img/twitter_verde.png')}}" alt="Twitter"></a>
                         </div>
                     </div>
                 </div>
                 <div class="mt-4 ml-3 p-3 text-center">
                     <div class="card pessoa" style="width: 15rem;">
-                        <img class="card-img-top" src="../img/Joao.jpg" alt="Imagem de capa do card">
+                        <img class="card-img-top" src="{{asset('img/Joao.jpg')}}" alt="Imagem de capa do card">
                         <div class="card-body">
                             <h5 class="card-title">João Roberto</h5>
                             <p class="card-text">Desenvolvimento Back-End e Documentação</p>
                             <hr>
-                            <a href="#" class="img-sn"><img src="../img/facebook_verde.png" alt="Facebook"></a>
-                            <a href="#" class="img-sn"><img src="../img/instagram_verde.png" alt="instagram"></a>
-                            <a href="#" class="img-sn"><img src="../img/twitter_verde.png" alt="Twitter"></a>
+                            <a href="#" class="img-sn"><img src="{{asset('img/facebook_verde.png')}}" alt="Facebook"></a>
+                            <a href="#" class="img-sn"><img src="{{asset('img/instagram_verde.png')}}" alt="instagram"></a>
+                            <a href="#" class="img-sn"><img src="{{asset('img/twitter_verde.png')}}" alt="Twitter"></a>
                         </div>
                     </div>
                 </div>
                 <div class="mt-4 ml-3 p-3 text-center">
                     <div class="card pessoa" style="width: 15rem;">
-                        <img class="card-img-top" src="../img/Loane.jpg" alt="Imagem de capa do card">
+                        <img class="card-img-top" src="{{asset('img/Loane.jpg')}}" alt="Imagem de capa do card">
                         <div class="card-body">
                             <h5 class="card-title">Loane Nicoly</h5>
                             <p class="card-text">Desenvolvimento Front-End e Gerente do projeto</p>
                             <hr>
-                            <a href="#" class="img-sn"><img src="../img/facebook_verde.png" alt="Facebook"></a>
-                            <a href="#" class="img-sn"><img src="../img/instagram_verde.png" alt="instagram"></a>
-                            <a href="#" class="img-sn"><img src="../img/twitter_verde.png" alt="Twitter"></a>
+                            <a href="#" class="img-sn"><img src="{{asset('img/facebook_verde.png')}}" alt="Facebook"></a>
+                            <a href="#" class="img-sn"><img src="{{asset('img/instagram_verde.png')}}" alt="instagram"></a>
+                            <a href="#" class="img-sn"><img src="{{asset('img/twitter_verde.png')}}" alt="Twitter"></a>
                         </div>
                     </div>
                 </div>
                 <div class="mt-4 ml-3 p-3 text-center">
                     <div class="card pessoa" style="width: 15rem;">
-                        <img class="card-img-top" src="../img/LucasA.jpg" alt="Imagem de capa do card">
+                        <img class="card-img-top" src="{{asset('img/LucasA.jpg')}}" alt="Imagem de capa do card">
                         <div class="card-body">
                             <h5 class="card-title">Lucas Adolfo</h5>
                             <p class="card-text">Desenvolvimento do Protótipo em Arduino</p>
                             <hr>
-                            <a href="#" class="img-sn"><img src="../img/facebook_verde.png" alt="Facebook"></a>
-                            <a href="#" class="img-sn"><img src="../img/instagram_verde.png" alt="instagram"></a>
-                            <a href="#" class="img-sn"><img src="../img/twitter_verde.png" alt="Twitter"></a>
+                            <a href="#" class="img-sn"><img src="{{asset('img/facebook_verde.png')}}" alt="Facebook"></a>
+                            <a href="#" class="img-sn"><img src="{{asset('img/instagram_verde.png')}}" alt="instagram"></a>
+                            <a href="#" class="img-sn"><img src="{{asset('img/twitter_verde.png')}}" alt="Twitter"></a>
                         </div>
                     </div>
                 </div>
                 <div class="mt-4 ml-3 p-3 text-center">
                     <div class="card pessoa" style="width: 15rem;">
-                        <img class="card-img-top" src="../img/LucasR.jpg" alt="Imagem de capa do card">
+                        <img class="card-img-top" src="{{asset('img/LucasR.jpg')}}" alt="Imagem de capa do card">
                         <div class="card-body">
                             <h5 class="card-title">Lucas Ribeiro</h5>
                             <p class="card-text">Desenvolvimento Front-End e Documentação</p>
                             <hr>
-                            <a href="#" class="img-sn"><img src="../img/facebook_verde.png" alt="Facebook"></a>
-                            <a href="#" class="img-sn"><img src="../img/instagram_verde.png" alt="instagram"></a>
-                            <a href="#" class="img-sn"><img src="../img/twitter_verde.png" alt="Twitter"></a>
+                            <a href="#" class="img-sn"><img src="{{asset('img/facebook_verde.png')}}" alt="Facebook"></a>
+                            <a href="#" class="img-sn"><img src="{{asset('img/instagram_verde.png')}}" alt="instagram"></a>
+                            <a href="#" class="img-sn"><img src="{{asset('img/twitter_verde.png')}}" alt="Twitter"></a>
                         </div>
                     </div>
                 </div>
-        </div>    
+        </div>
     </section>
 
     <!-- Contato -->
@@ -239,7 +245,7 @@
             <div class="row">
                 <div class="col-12 ctt ">
                     <div class="col-7 ctt-left">
-                        <img src="../img/dogs_ctt.jpg" alt="">
+                        <img src="{{asset('img/dogs_ctt.jpg')}}" alt="">
                     </div>
                     <div class="col-4 ctt-right text-left">
                         <h1>Entrar em contato</h1>
@@ -277,7 +283,7 @@
                     <div class="logo_footer col-3 pb-3">
                         <h3 class="pt-3 text-left">ArdPets</h3>
                         <hr>
-                        <img src="../img/LOGO_ARD-PETS-branca.png" alt="Logo_ArdPets">
+                        <img src="{{asset('img/LOGO_ARD-PETS-branca.png')}}" alt="Logo_ArdPets">
                     </div>
                     <div class=" col-6">
                         <h3 class="pt-3 text-right">Sobre o Projeto</h3>
@@ -293,12 +299,12 @@
                         <h3 class="pt-3 text-right"> Redes Sociais</h3>
                         <hr>
                         <div class="div-rs mt-4">
-                            <a href="#" class="mr-3"><img src="../img/facebook.png" alt="facebook"></a>
-                            <a href="#"><img src="../img/twitter.png" alt="twitter"></a>
+                            <a href="#" class="mr-3"><img src="{{asset('img/facebook.png')}}" alt="facebook"></a>
+                            <a href="#"><img src="{{asset('img/twitter.png')}}" alt="twitter"></a>
                         </div>
                         <div class="div-rs mt-3">
-                            <a href="#" class="mr-3"><img src="../img/instagram.png" alt="instagram"></a>
-                            <a href="#"><img src="../img/google.png" alt="google"></a>
+                            <a href="#" class="mr-3"><img src="{{asset('img/instagram.png')}}" alt="instagram"></a>
+                            <a href="#"><img src="{{asset('img/google.png')}}" alt="google"></a>
                         </div>
                     </div>
                 </div>
