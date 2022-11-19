@@ -33,4 +33,4 @@ Route::post('/acesso', [LoginController::class,'login']);
 // páginas principais
 Route::get('/principal',[HomeController::class,'index']);
 Route::post('/pet/store', [PetController::class,'store']);
-Route::get('/logout', [HomeController::class,'logout']);
+Route::post('/logout', [HomeController::class,'logout']);

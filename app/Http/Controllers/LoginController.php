@@ -37,7 +37,6 @@ class LoginController extends Controller
         $Sql = "select id,email,senha from dono where email=?";
         $NewNome = DB::select($Sql, $User);
         foreach ($NewNome as $name) {
-
             $Aux = array("id" => $name->id);
             $AuxJson = json_encode($Aux);
             $file = fopen('UserJson.json', 'w');
@@ -50,3 +49,4 @@ class LoginController extends Controller
         }
     }
 }
+
