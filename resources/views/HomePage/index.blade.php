@@ -43,6 +43,7 @@
                             </li>
 
                         </ul>
+
                         <button class="btn btn-outline-primary my-2 my-sm-0 btn-sair" data-toggle="modal"
                         data-target="#ExemploModalCentralizado2" type="submit"><img src="{{ asset('img/perfil.png') }}"alt="Perfil"></button>
 
@@ -56,22 +57,22 @@
                                     </button>
                                 </div>
                                 <div class="modal-body ">
-                                    <form>
+                                    <form method="post" action="/user/update">
+                                        @csrf
                                         <div class="form-group">
-                                            <label for="exampleFormControlInput1">Nome do Perfil</label>
-                                            <input type="text" class="form-control " id="exampleFormControlInput1" placeholder="Novo Nome">
+                                            <label for="exampleFormControlInput1">Email</label>
+                                            <input type="email" name="UpdateUserEmail" class="form-control " id="exampleFormControlInput1" placeholder="Novo Nome" >
                                         </div>
 
                                         <div class="form-group">
                                             <label for="exampleFormControlInput1">Senha</label>
-                                            <input type="password" class="form-control " id="exampleFormControlInput1" placeholder="Nova Senha">
+                                            <input type="password" name="UpdateUserPasswd" class="form-control " id="exampleFormControlInput1" placeholder="Nova Senha">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                            <button type="submit" class="btn btn-success ">Enviar</button>
                                         </div>
                                     </form>
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                                    <button type="button" class="btn btn-success ">Enviar</button>
                                 </div>
                             </div>
                         </div>
@@ -85,7 +86,21 @@
             </nav>
         </header>
 
+        @isset($MensagemSucesso)
+            <div class="alert alert-success">
+                {{ $MensagemSucesso }}
+            </div>
+        @endisset
 
+        @if($errors->any())
+           <div class="alert alert-danger">
+               <ul>
+                   @foreach($errors as $error)
+                       <li> {{ $error }}</li>
+                   @endforeach
+               </ul>
+           </div>
+        @endif
         <section class="meio-1">
             <div class="cadastro-pet col-4">
                 <div class="col-5">

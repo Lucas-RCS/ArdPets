@@ -7,9 +7,10 @@
     <link rel='stylesheet' type='text/css' media='screen' href="{{ asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/csslogin.css')}}">
     <title>{{ $title }}</title>
-
 </head>
+
 <body>
+
 {{ $slot }}
 </body>
 </html>

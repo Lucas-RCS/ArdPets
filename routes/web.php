@@ -18,19 +18,27 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/iniciar-sessao');
 });
 
 
-//  páginas que criam a conta
-Route::get('/criar-conta', [LoginController::class,'create']);
-Route::post('/criado', [LoginController::class,'store']);
 
-// Páginas que acessam a conta
-Route::get('/iniciar-sessao', [LoginController::class,'index']);
-Route::post('/acesso', [LoginController::class,'login']);
+Route::controller(LoginController::class)->group(function(){
+    //gets
+    Route::get('/criar-conta','create')->name('User.Create');
+    Route::get('/iniciar-sessao','index')->name("User.Index");
+    //post
+    Route::post('/criado', 'store')->name("User.Store");
+    Route::post('/user/acesso', 'login')->name("User.Login");
+}
+);
 
-// páginas principais
-Route::get('/principal',[HomeController::class,'index']);
+Route::controller(HomeController::class)->group(function(){
+    //get
+    Route::get('/principal','index')->name('HomePage.Index');
+    //post
+    Route::post('/logout', 'logout')->name('HomePage.Logout');
+    Route::post('/user/update','update')->name('HomePage.Update');
+});
+
 Route::post('/pet/store', [PetController::class,'store']);
-Route::post('/logout', [HomeController::class,'logout']);

@@ -1,5 +1,21 @@
-<x-layout title="Login ArdPet">
+<x-layout title="ArdPet">
     <main>
+          @isset($MensagemSucesso)
+            <div class="alert alert-success">
+                {{ $MensagemSucesso }}
+            </div>
+        @endisset
+
+        @if($errors->any())
+           <div class="alert alert-danger">
+               <ul>
+                   @foreach($errors as $error)
+                       <li> {{ $error }}</li>
+                   @endforeach
+               </ul>
+           </div>
+        @endif
+
         <div class="container">
             <div class="col-10 offset-1 bg-all">
                 <div class="col-4 div-left">
@@ -10,7 +26,7 @@
                         <h1>Login</h1>
                         <hr>
                     </div>
-                    <form method="post" action="/acesso">
+                    <form method="post" action="/user/acesso">
                         @csrf
                         <div class="single-input">
                             <input type="email" class="input" id="nome" name="IndexUserEmail" maxlength="25" required>
