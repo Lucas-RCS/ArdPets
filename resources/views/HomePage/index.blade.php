@@ -158,11 +158,7 @@
                                             <button type="submit" class="btn btn-success ">Enviar</button>
                                         </div>
                                     </form>
-
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                                    <button type="button" class="btn btn-success ">Enviar</button>
                                 </div>
                             </div>
                         </div>

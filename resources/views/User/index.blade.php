@@ -1,8 +1,8 @@
 <x-layout title="ArdPet">
     <main>
-          @isset($MensagemSucesso)
+          @isset($MensagemSucess)
             <div class="alert alert-success">
-                {{ $MensagemSucesso }}
+                {{ $MensagemSucess }}
             </div>
         @endisset
 

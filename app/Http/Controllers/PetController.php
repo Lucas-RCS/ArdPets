@@ -22,8 +22,7 @@ class PetController extends Controller
             $request->input('CreatePetImg')
         ];
 
-        dd($Pet);
-        //$Sql = "insert into pet values (?,?,?,?,time_format(?,"%H:%i"))";
+        $Sql = "insert into pet values (?,?,?,?,?)";
         DB::insert($Sql,$Pet);
         return redirect('/principal');
     }
