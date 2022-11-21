@@ -1,6 +1,12 @@
 <x-layout title="Cadastro">
 
     <main>
+              @isset($MensagemWarning)
+            <div class="alert alert-warning">
+                {{ $MensagemWarning }}
+            </div>
+        @endisset
+
         <div class="container">
             <div class="col-10 offset-1 bg-all">
                 <div class="col-4 div-left">

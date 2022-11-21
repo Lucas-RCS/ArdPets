@@ -92,15 +92,6 @@
             </div>
         @endisset
 
-        @if($errors->any())
-           <div class="alert alert-danger">
-               <ul>
-                   @foreach($errors as $error)
-                       <li> {{ $error }}</li>
-                   @endforeach
-               </ul>
-           </div>
-        @endif
         <section class="meio-1">
             <div class="cadastro-pet col-4">
                 <div class="col-5">
@@ -142,7 +133,7 @@
                                         <div class="form-group">
                                             <label for="exampleFormControlSelect1">Porte do Animal</label>
                                             <select class="form-control" id="exampleFormControlSelect1" name="CreatePetPorte">
-                                                <option value="nenhum">Nenhum</option>
+                                                <option selected value="nenhum">Nenhum</option>
                                                 <option value="mini">Mini</option>
                                                 <option value="pequeno">Pequeno</option>
                                                 <option value="medio">Médio</option>
@@ -160,7 +151,7 @@
                                         </div>
                                         <div class="form-group" data-date-format="HH:mm">
                                             <label for="exampleFormControlFile1">Hora:</label>
-                                            <input type="time" name="CreatePetTime" >
+                                            <input type="time" name="CreatePetTime" dataformatas="HH:mm" id="exampleFormControlFile1">
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
