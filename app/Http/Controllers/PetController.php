@@ -15,12 +15,13 @@ class PetController extends Controller
 
         $Pet = [
             $UserJson->id,
-            $request->input('CreatePetName'),
-            $request->input('CreatePetPorte'),
-            $request->input('CreatePetAge'),
-            $request->input('CreatePetTime'),
-            $request->input('CreatePetImg')
+            $request->CreatePetName,
+            $request->CreatePetPorte,
+            $request->CreatePetAge,
+            $request->CreatePetTimeHour,
+            $request->CreatePetTimeMin,
         ];
+        dd($Pet);
 
         $Sql = "insert into pet values (?,?,?,?,?)";
         DB::insert($Sql,$Pet);

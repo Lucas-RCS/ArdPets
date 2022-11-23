@@ -24,7 +24,7 @@
                             <label for="Nome">Email</label>
                         </div>
                         <div class="single-input">
-                            <input type="password" class="input" id="senha" name="CreateUserPasswd" maxlength="10"
+                            <input type="password" class="input" id="senha" name="CreateUserPasswd" minlength="3" maxlength="10"
                                    required>
                             <label for="Senha">Senha</label>
                         </div>

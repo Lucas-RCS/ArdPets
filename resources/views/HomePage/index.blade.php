@@ -146,13 +146,65 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="exampleFormControlFile1">Insira a foto de seu Pet</label>
-                                            <input type="file" name="CreatePetImg" class="form-control-file ml-4" id="exampleFormControlFile1">
+                                            <label for="exampleFormControlSelect1">Hora</label>
+                                            <select class="form-control" id="exampleFormControlSelect1" name="CreatePetTimeHour">
+                                                <option selected value="00">00</option>
+                                                <option value=01>01</option>
+                                                <option value=02>02</option>
+                                                <option value=03>03</option>
+                                                <option value=04>04</option>
+                                                <option value=05>05</option>
+                                                <option value=06>06</option>
+                                                <option value=07>07</option>
+                                                <option value=08>08</option>
+                                                <option value=09>09</option>
+                                                <option value=10>10</option>
+                                                <option value=11>11</option>
+                                                <option value=12>12</option>
+                                                <option value=13>13</option>
+                                                <option value=14>14</option>
+                                                <option value=15>15</option>
+                                                <option value=16>16</option>
+                                                <option value=17>17</option>
+                                                <option value=18>18</option>
+                                                <option value=19>19</option>
+                                                <option value=20>20</option>
+                                                <option value=21>21</option>
+                                                <option value=22>22</option>
+                                                <option value=23>23</option>
+                                            </select>
                                         </div>
-                                        <div class="form-group" data-date-format="HH:mm">
-                                            <label for="exampleFormControlFile1">Hora:</label>
-                                            <input type="time" name="CreatePetTime" dataformatas="HH:mm" id="exampleFormControlFile1">
+
+                                        <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Minutos</label>
+                                        <select class="form-control" id="exampleFormControlSelect1" name="CreatePetTimeMin">
+                                        <option selected value="00">00</option>
+                                        <option value=01>01</option>
+                                        <option value=02>02</option>
+                                        <option value=03>03</option>
+                                        <option value=04>04</option>
+                                        <option value=05>05</option>
+                                        <option value=06>06</option>
+                                        <option value=07>07</option>
+                                        <option value=08>08</option>
+                                        <option value=09>09</option>
+                                        <option value=10>10</option>
+                                        <option value=11>11</option>
+                                        <option value=12>12</option>
+                                        <option value=13>13</option>
+                                        <option value=14>14</option>
+                                        <option value=15>15</option>
+                                        <option value=16>16</option>
+                                        <option value=17>17</option>
+                                        <option value=18>18</option>
+                                        <option value=19>19</option>
+                                        <option value=20>20</option>
+                                        <option value=21>21</option>
+                                        <option value=22>22</option>
+                                        <option value=23>23</option>
+                                        </select>
                                         </div>
+
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                                             <button type="submit" class="btn btn-success ">Enviar</button>
