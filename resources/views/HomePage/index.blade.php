@@ -11,6 +11,13 @@
 </head>
 
 <body>
+
+    @isset($MensagemSucesso)
+    <div class="alert alert-success">
+        {{ $MensagemSucesso }}
+    </div>
+    @endisset
+
     <section class="bg-cao">
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
@@ -44,53 +51,47 @@
 
                         </ul>
 
-                        <button class="btn btn-outline-primary my-2 my-sm-0 btn-sair" data-toggle="modal"
-                        data-target="#ExemploModalCentralizado2" type="submit"><img src="{{ asset('img/perfil.png') }}"alt="Perfil"></button>
+                        <button class="btn btn-outline-primary my-2 my-sm-0 btn-sair" data-toggle="modal" data-target="#ExemploModalCentralizado2" type="submit"><img src="{{ asset('img/perfil.png') }}" alt="Perfil"></button>
 
                         <div class="modal fade" id="ExemploModalCentralizado2" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="TituloModalCentralizado">Atualizar Perfil</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body ">
-                                    <form method="post" action="/user/update">
-                                        @csrf
-                                        <div class="form-group">
-                                            <label for="exampleFormControlInput1">Email</label>
-                                            <input type="email" name="UpdateUserEmail" class="form-control " id="exampleFormControlInput1" placeholder="Novo Nome" >
-                                        </div>
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="TituloModalCentralizado">Atualizar Perfil</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body ">
+                                        <form method="post" action="/user/update">
+                                            @csrf
+                                            <div class="form-group">
+                                                <label for="exampleFormControlInput1">Email</label>
+                                                <input type="email" name="UpdateUserEmail" class="form-control " id="exampleFormControlInput1" placeholder="Novo Nome">
+                                            </div>
 
-                                        <div class="form-group">
-                                            <label for="exampleFormControlInput1">Senha</label>
-                                            <input type="password" name="UpdateUserPasswd" class="form-control " id="exampleFormControlInput1" placeholder="Nova Senha">
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="submit" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                                            <button type="submit" class="btn btn-success ">Enviar</button>
-                                        </div>
-                                    </form>
+                                            <div class="form-group">
+                                                <label for="exampleFormControlInput1">Senha</label>
+                                                <input type="password" name="UpdateUserPasswd" class="form-control " id="exampleFormControlInput1" placeholder="Nova Senha">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                                <button type="submit" class="btn btn-success ">Enviar</button>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                        <form class="btn btn-outline-success my-2 my-sm-0 btn-sair" method="post" action="/logout">
+                        <form method="post" action="/logout">
                             @csrf
-                            <button type="submit"><img src="{{asset('img/opcao-de-sair.png')}}" alt="Sair"></button>
+                            <button type="submit" class="btn btn-outline-success my-2 my-sm-0 btn-sair2"><img src="{{asset('img/opcao-de-sair.png')}}" alt="Sair"></button>
                         </form>
                     </div>
                 </div>
             </nav>
         </header>
 
-        @isset($MensagemSucesso)
-            <div class="alert alert-success">
-                {{ $MensagemSucesso }}
-            </div>
-        @endisset
 
         <section class="meio-1">
             <div class="cadastro-pet col-4">
@@ -101,9 +102,9 @@
                 <div class="col-6 pet-cdt">
                     <div class="frase-cdt">
                         @foreach($Pets as $pet)
-                            <h1>{{ $pet->nome }}</h1>
-                            <p>{{ $pet->porte }}</p>
-                            <p>{{ $pet->idade }}</p>
+                        <h1>{{ $pet->nome }}</h1>
+                        <p>{{ $pet->porte }}</p>
+                        <p>{{ $pet->idade }}</p>
                         @endforeach
                     </div>
 
@@ -144,65 +145,20 @@
                                             <label for="exampleFormControlInput1">Idade do Pet</label>
                                             <input type="number" class="form-control " id="exampleFormControlInput1" placeholder="Idade" name="CreatePetAge">
                                         </div>
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="form-group col-6">
+                                                    <label for="exampleFormControlSelect1">Hora:</label>
+                                                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Horas" name="CreatePetName" min="00" max="23">
+                                                    </select>
+                                                </div>
 
-                                        <div class="form-group">
-                                            <label for="exampleFormControlSelect1">Hora</label>
-                                            <select class="form-control" id="exampleFormControlSelect1" name="CreatePetTimeHour">
-                                                <option selected value="00">00</option>
-                                                <option value=01>01</option>
-                                                <option value=02>02</option>
-                                                <option value=03>03</option>
-                                                <option value=04>04</option>
-                                                <option value=05>05</option>
-                                                <option value=06>06</option>
-                                                <option value=07>07</option>
-                                                <option value=08>08</option>
-                                                <option value=09>09</option>
-                                                <option value=10>10</option>
-                                                <option value=11>11</option>
-                                                <option value=12>12</option>
-                                                <option value=13>13</option>
-                                                <option value=14>14</option>
-                                                <option value=15>15</option>
-                                                <option value=16>16</option>
-                                                <option value=17>17</option>
-                                                <option value=18>18</option>
-                                                <option value=19>19</option>
-                                                <option value=20>20</option>
-                                                <option value=21>21</option>
-                                                <option value=22>22</option>
-                                                <option value=23>23</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="form-group">
-                                        <label for="exampleFormControlSelect1">Minutos</label>
-                                        <select class="form-control" id="exampleFormControlSelect1" name="CreatePetTimeMin">
-                                        <option selected value="00">00</option>
-                                        <option value=01>01</option>
-                                        <option value=02>02</option>
-                                        <option value=03>03</option>
-                                        <option value=04>04</option>
-                                        <option value=05>05</option>
-                                        <option value=06>06</option>
-                                        <option value=07>07</option>
-                                        <option value=08>08</option>
-                                        <option value=09>09</option>
-                                        <option value=10>10</option>
-                                        <option value=11>11</option>
-                                        <option value=12>12</option>
-                                        <option value=13>13</option>
-                                        <option value=14>14</option>
-                                        <option value=15>15</option>
-                                        <option value=16>16</option>
-                                        <option value=17>17</option>
-                                        <option value=18>18</option>
-                                        <option value=19>19</option>
-                                        <option value=20>20</option>
-                                        <option value=21>21</option>
-                                        <option value=22>22</option>
-                                        <option value=23>23</option>
-                                        </select>
+                                                <div class="form-group col-6">
+                                                    <label for="exampleFormControlSelect1">Minutos:</label>
+                                                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Minutos" name="CreatePetName" min="00" max="59">
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <div class="modal-footer">
@@ -211,11 +167,11 @@
                                         </div>
                                     </form>
                                 </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     </section>
@@ -227,71 +183,71 @@
             <h1>Conheça a equipe</h1>
         </div>
         <div class="sn">
-                <div class="mt-4 ml-5 p-3 text-center">
-                    <div class="card pessoa" style="width: 15rem;">
-                        <img class="card-img-top" src="{{asset('img/cezar.jpg')}}" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h5 class="card-title">Cezar Aparecido</h5>
-                            <p class="card-text">Desenvolvimento do Protótipo em Arduino</p>
-                            <hr>
-                            <a href="#" class="img-sn"><img src="{{asset('img/facebook_verde.png')}}" alt="Facebook"></a>
-                            <a href="#" class="img-sn"><img src="{{asset('img/instagram_verde.png')}}" alt="instagram"></a>
-                            <a href="#" class="img-sn"><img src="{{asset('img/twitter_verde.png')}}" alt="Twitter"></a>
-                        </div>
+            <div class="mt-4 ml-5 p-3 text-center">
+                <div class="card pessoa" style="width: 15rem;">
+                    <img class="card-img-top" src="{{asset('img/cezar.jpg')}}" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Cezar Aparecido</h5>
+                        <p class="card-text">Desenvolvimento do Protótipo em Arduino</p>
+                        <hr>
+                        <a href="#" class="img-sn"><img src="{{asset('img/facebook_verde.png')}}" alt="Facebook"></a>
+                        <a href="#" class="img-sn"><img src="{{asset('img/instagram_verde.png')}}" alt="instagram"></a>
+                        <a href="#" class="img-sn"><img src="{{asset('img/twitter_verde.png')}}" alt="Twitter"></a>
                     </div>
                 </div>
-                <div class="mt-4 ml-3 p-3 text-center">
-                    <div class="card pessoa" style="width: 15rem;">
-                        <img class="card-img-top" src="{{asset('img/Joao.jpg')}}" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h5 class="card-title">João Roberto</h5>
-                            <p class="card-text">Desenvolvimento Back-End e Documentação</p>
-                            <hr>
-                            <a href="#" class="img-sn"><img src="{{asset('img/facebook_verde.png')}}" alt="Facebook"></a>
-                            <a href="#" class="img-sn"><img src="{{asset('img/instagram_verde.png')}}" alt="instagram"></a>
-                            <a href="#" class="img-sn"><img src="{{asset('img/twitter_verde.png')}}" alt="Twitter"></a>
-                        </div>
+            </div>
+            <div class="mt-4 ml-3 p-3 text-center">
+                <div class="card pessoa" style="width: 15rem;">
+                    <img class="card-img-top" src="{{asset('img/Joao.jpg')}}" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">João Roberto</h5>
+                        <p class="card-text">Desenvolvimento Back-End e Documentação</p>
+                        <hr>
+                        <a href="#" class="img-sn"><img src="{{asset('img/facebook_verde.png')}}" alt="Facebook"></a>
+                        <a href="#" class="img-sn"><img src="{{asset('img/instagram_verde.png')}}" alt="instagram"></a>
+                        <a href="#" class="img-sn"><img src="{{asset('img/twitter_verde.png')}}" alt="Twitter"></a>
                     </div>
                 </div>
-                <div class="mt-4 ml-3 p-3 text-center">
-                    <div class="card pessoa" style="width: 15rem;">
-                        <img class="card-img-top" src="{{asset('img/Loane.jpg')}}" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h5 class="card-title">Loane Nicoly</h5>
-                            <p class="card-text">Desenvolvimento Front-End e Gerente do projeto</p>
-                            <hr>
-                            <a href="#" class="img-sn"><img src="{{asset('img/facebook_verde.png')}}" alt="Facebook"></a>
-                            <a href="#" class="img-sn"><img src="{{asset('img/instagram_verde.png')}}" alt="instagram"></a>
-                            <a href="#" class="img-sn"><img src="{{asset('img/twitter_verde.png')}}" alt="Twitter"></a>
-                        </div>
+            </div>
+            <div class="mt-4 ml-3 p-3 text-center">
+                <div class="card pessoa" style="width: 15rem;">
+                    <img class="card-img-top" src="{{asset('img/Loane.jpeg')}}" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Loane Mendes</h5>
+                        <p class="card-text">Desenvolvimento Front-End e Gerente do projeto</p>
+                        <hr>
+                        <a href="#" class="img-sn"><img src="{{asset('img/facebook_verde.png')}}" alt="Facebook"></a>
+                        <a href="#" class="img-sn"><img src="{{asset('img/instagram_verde.png')}}" alt="instagram"></a>
+                        <a href="#" class="img-sn"><img src="{{asset('img/twitter_verde.png')}}" alt="Twitter"></a>
                     </div>
                 </div>
-                <div class="mt-4 ml-3 p-3 text-center">
-                    <div class="card pessoa" style="width: 15rem;">
-                        <img class="card-img-top" src="{{asset('img/LucasA.jpg')}}" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h5 class="card-title">Lucas Adolfo</h5>
-                            <p class="card-text">Desenvolvimento do Protótipo em Arduino</p>
-                            <hr>
-                            <a href="#" class="img-sn"><img src="{{asset('img/facebook_verde.png')}}" alt="Facebook"></a>
-                            <a href="#" class="img-sn"><img src="{{asset('img/instagram_verde.png')}}" alt="instagram"></a>
-                            <a href="#" class="img-sn"><img src="{{asset('img/twitter_verde.png')}}" alt="Twitter"></a>
-                        </div>
+            </div>
+            <div class="mt-4 ml-3 p-3 text-center">
+                <div class="card pessoa" style="width: 15rem;">
+                    <img class="card-img-top" src="{{asset('img/LucasA.jpg')}}" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Lucas Adolfo</h5>
+                        <p class="card-text">Desenvolvimento do Protótipo em Arduino</p>
+                        <hr>
+                        <a href="#" class="img-sn"><img src="{{asset('img/facebook_verde.png')}}" alt="Facebook"></a>
+                        <a href="#" class="img-sn"><img src="{{asset('img/instagram_verde.png')}}" alt="instagram"></a>
+                        <a href="#" class="img-sn"><img src="{{asset('img/twitter_verde.png')}}" alt="Twitter"></a>
                     </div>
                 </div>
-                <div class="mt-4 ml-3 p-3 text-center">
-                    <div class="card pessoa" style="width: 15rem;">
-                        <img class="card-img-top" src="{{asset('img/LucasR.jpg')}}" alt="Imagem de capa do card">
-                        <div class="card-body">
-                            <h5 class="card-title">Lucas Ribeiro</h5>
-                            <p class="card-text">Desenvolvimento Front-End e Documentação</p>
-                            <hr>
-                            <a href="#" class="img-sn"><img src="{{asset('img/facebook_verde.png')}}" alt="Facebook"></a>
-                            <a href="#" class="img-sn"><img src="{{asset('img/instagram_verde.png')}}" alt="instagram"></a>
-                            <a href="#" class="img-sn"><img src="{{asset('img/twitter_verde.png')}}" alt="Twitter"></a>
-                        </div>
+            </div>
+            <div class="mt-4 ml-3 p-3 text-center">
+                <div class="card pessoa" style="width: 15rem;">
+                    <img class="card-img-top" src="{{asset('img/LucasR.jpg')}}" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Lucas Ribeiro</h5>
+                        <p class="card-text">Desenvolvimento Front-End e Documentação</p>
+                        <hr>
+                        <a href="#" class="img-sn"><img src="{{asset('img/facebook_verde.png')}}" alt="Facebook"></a>
+                        <a href="#" class="img-sn"><img src="{{asset('img/instagram_verde.png')}}" alt="instagram"></a>
+                        <a href="#" class="img-sn"><img src="{{asset('img/twitter_verde.png')}}" alt="Twitter"></a>
                     </div>
                 </div>
+            </div>
         </div>
     </section>
 
@@ -335,7 +291,7 @@
     </section>
     </main>
 
-<!-- Hello World!-->
+    <!-- Hello World!-->
     <!-- Rodapé -->
     <footer class="bg-dark text-white text-center rodape ">
         <div class="container">
@@ -384,4 +340,5 @@
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/app.js"></script>
 </body>
+
 </html>
