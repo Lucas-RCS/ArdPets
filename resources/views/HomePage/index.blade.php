@@ -331,14 +331,14 @@
         <div class="container">
             <div class="row">
                 <div class="footer-end">
-                    <p class="copyr">©2022 Copyright - ArdPets</p>
+                    <p class="copyr">©2022 - 2023 Copyright - ArdPets</p>
                 </div>
             </div>
         </div>
     </footer>
     <script src="../js/jquery-3.5.1.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/app.js"></script>
+    <script src="../js/app.js"></script>  
 </body>
 
 </html>
