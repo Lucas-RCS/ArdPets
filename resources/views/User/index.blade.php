@@ -53,7 +53,7 @@
                         </div>
                     </form>
                     <div class="redes-sociais col-12">
-                        <p>©2022 - ArdPets</p>
+                        <p>©2022 - 2023 | ArdPets</p>
                     </div>
                 </div>
                 <div class="col-8 div-right p-0">

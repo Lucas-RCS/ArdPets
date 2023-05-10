@@ -1,10 +1,10 @@
 <x-layout title="Cadastro">
 
     <main>
-              @isset($MensagemWarning)
-            <div class="alert alert-warning">
-                {{ $MensagemWarning }}
-            </div>
+        @isset($MensagemWarning)
+        <div class="alert alert-warning">
+            {{ $MensagemWarning }}
+        </div>
         @endisset
 
         <div class="container">
@@ -20,12 +20,15 @@
                     <form method="post" action="/criado">
                         @csrf
                         <div class="single-input">
-                            <input type="email" class="input" id="nome" name="CreateUserEmail" maxlength="25" required>
-                            <label for="Nome">Email</label>
+                            <input type="text" class="input" id="nome" name="CreateUserEmail" maxlength="25" required>
+                            <label for="Nome">Nome</label>
                         </div>
                         <div class="single-input">
-                            <input type="password" class="input" id="senha" name="CreateUserPasswd" minlength="3" maxlength="10"
-                                   required>
+                            <input type="email" class="input" id="email" name="CreateUserEmail" maxlength="25" required>
+                            <label for="Email">Email</label>
+                        </div>
+                        <div class="single-input">
+                            <input type="password" class="input" id="senha" name="CreateUserPasswd" minlength="3" maxlength="10" required>
                             <label for="Senha">Senha</label>
                         </div>
                         <div class="botao col-12">
@@ -42,13 +45,13 @@
                         </div>
                     </form>
                     <div class="redes-sociais col-12">
-                        <p>©2022 - ArdPets</p>
+                        <p>©2022 - 2023 | ArdPets</p>
                     </div>
                 </div>
                 <div class="col-8 div-right p-0">
                     <div class="col-12 topo p-0">
                         <div class="pt-3">
-                            <a href="/iniciar-sessao"><img src="{{asset('img/voltar.png')}}" class="btn-voltar pt-1" alt="Voltar"></a>
+                            <a href="/iniciar-sessao"><i class="fa fa-arrow-circle-left fa-3x btn-voltar pt-1 " alt="Voltar"></i></a>
                         </div>
                     </div>
                     <div class="col-8 offset-2 nameAP">

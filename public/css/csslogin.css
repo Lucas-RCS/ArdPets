@@ -180,12 +180,13 @@ form div.single-input .input:valid ~ label{
 
 .redes-sociais{
     margin-top: 150%;
+    align-items: center;
+    justify-content: center;
     display: flex;
 }
 
 .redes-sociais p{
     color: white;
-    margin-left: 32%;
     font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
@@ -217,8 +218,13 @@ p{
 
 
 .btn-voltar{
+    color: #19db70;
     width: 8%;
-    margin-left: 95%;
+    margin-left: 1000%;
+    transition:0.2s;
+}
+.btn-voltar:hover{
+    color: #0a5f55;
 }
 .cadastrobtn {
     border-color: #19db70;

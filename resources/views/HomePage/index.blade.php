@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' type='text/css' media='screen' href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/paginicialcss.css')}}">
-    <title>Pag Inicial</title>
+    <link rel="shortcut icon" href="{{asset('img/LOGO_ARD-PETS-branca.png')}}" type="image/gif">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,1,0" />
+
+    <title>Página Inicial</title>
 </head>
 
 <body>
@@ -20,7 +24,7 @@
 
     <section class="bg-cao">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"><img src="{{ asset('img/LOGO_ARD-PETS-branca.png')}}" alt="ArdPet">ArdPets</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,6 +93,76 @@
                         </form>
                     </div>
                 </div>
+            </nav> -->
+            <nav>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#">
+                        <img src="{{ asset('img/LOGO_ARD-PETS-branca.png')}}" width="50" height="45" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    WikiPets
+                                </a>
+                                <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Cães</a>
+                                    <a class="dropdown-item" href="#">Gatos</a>
+                                    <a class="dropdown-item" href="#">Rações</a>
+                                    <a class="dropdown-item" href="#">Guia</a>
+                                </div>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Sobre Nós</a></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Contato</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <a href="#"><i class="fa fa-user-circle fa-2x btn-nav pt-1 mr-1 " alt="Voltar" data-toggle="modal" data-target="#ExemploModalCentralizado2" type="submit"></i></a>
+                            <div class="modal fade" id="ExemploModalCentralizado2" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="TituloModalCentralizado">Atualizar Perfil</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body ">
+                                            <form method="post" action="/user/update">
+                                                @csrf
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlInput1">Email</label>
+                                                    <input type="email" name="UpdateUserEmail" class="form-control " id="exampleFormControlInput1" placeholder="Novo Nome">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlInput1">Senha</label>
+                                                    <input type="password" name="UpdateUserPasswd" class="form-control " id="exampleFormControlInput1" placeholder="Nova Senha">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="submit" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                                    <button type="submit" class="btn btn-success ">Enviar</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <a href="#"><i class="fa fa-sign-out fa-2x btn-nav logout pt-1 " alt="Voltar"></i></a>
+                    </div>
+                </nav>
             </nav>
         </header>
 
@@ -331,14 +405,14 @@
         <div class="container">
             <div class="row">
                 <div class="footer-end">
-                    <p class="copyr">©2022 - 2023 Copyright - ArdPets</p>
+                    <p class="copyr">©2022 - 2023z Copyright - ArdPets</p>
                 </div>
             </div>
         </div>
     </footer>
     <script src="../js/jquery-3.5.1.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/app.js"></script>  
+    <script src="../js/app.js"></script>
 </body>
 
 </html>

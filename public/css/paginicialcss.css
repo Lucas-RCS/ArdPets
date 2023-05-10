@@ -14,76 +14,26 @@ a:hover {
 
 }
 
-
-.navbar{
-    background-color: transparent !important;
-    font-size: 18px;
-}
-
-.navbar-brand {
-    width: 5%;
-}
-.navbar-brand img{
-    width: 80%;
-    margin-left: 10%;
-}
-
-.navbar-nav{
-    margin-left: 8%;
-    width: 1000%;
-}
-
-.nav-item{
-    border-radius: 100px;
-    width: 10%;
-    align-items: center;
-    text-align: center;
-    margin-left: 1%;
-}
-.btn-sair{
-    width: 30%;
-    color: white;
-    border-color: transparent;
-    border-radius: 10px;
-    font-size: 18px;
-    padding-left: -2%;
-    padding-right: -2%;
-    
-}  
-
-.btn-sair img{
-    width: 100%;
-}
-
-.btn-sair:hover{
-    background-color: #7bb680 !important;
-    border-color: transparent !important;
-}
-
-.btn-sair2{
-    width: 120%;
-    border-color: transparent;
-    border-radius: 10px;
-    font-size: 18px;
-    padding-left: -2%;
-    padding-right: -2%;
-}  
-
-.btn-sair2 img{
-    width: 120%;
-}
-
-.btn-sair2:hover{
-    background-color: #7bb680 !important;
-    border-color: transparent !important;
-}
-
-
 .bg-cao{
     background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.navbar{
+    background-color: transparent !important;
+    font-size: 20px;
+}
+.btn-nav{
+    color: #1da85c !important;
+    transition: 0.3s;
+}
+.btn-nav:hover{
+    color: #024b23 !important;
+}
+.logout{
+    margin-left: 5px;
 }
 
 .meio-1{
