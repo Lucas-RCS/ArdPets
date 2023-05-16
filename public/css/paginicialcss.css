@@ -2,7 +2,7 @@ body {
     background-color: white;
     margin: 0;
     padding: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 a:link {
@@ -14,34 +14,38 @@ a:hover {
 
 }
 
-.bg-cao{
+.bg-cao {
     background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.navbar{
+.navbar {
     background-color: transparent !important;
     font-size: 20px;
 }
-.btn-nav{
+
+.btn-nav {
     color: #1da85c !important;
     transition: 0.3s;
 }
-.btn-nav:hover{
+
+.btn-nav:hover {
     color: #024b23 !important;
 }
-.logout{
+
+.logout {
     margin-left: 5px;
 }
 
-.meio-1{
+.meio-1 {
+    width: 100%;
     height: 70vh;
     display: flex;
 }
 
-.cadastro-pet{
+.cadastro-pet {
     position: absolute;
     width: 50%;
     height: 40%;
@@ -52,34 +56,34 @@ a:hover {
     display: flex;
 }
 
-.cadastro-pet img{
+.cadastro-pet img {
     width: 120%;
     height: 50%;
     margin-top: 45%;
 }
 
-.cadastro-pet hr{
+.cadastro-pet hr {
     height: 89%;
     width: .1vw;
-    border-width:0;
+    border-width: 0;
     background-color: #19db70;
 }
 
 
 
-.frase-cdt h1{
+.frase-cdt h1 {
     font-size: 50px;
     text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     line-height: 75%;
     margin-top: 25%;
     display: flex;
 }
 
-.frase-cdt p{
+.frase-cdt p {
     font-size: 18px bold;
     text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     line-height: 75%;
     margin-top: 15%;
 }
@@ -89,7 +93,7 @@ a:hover {
     border-color: #19db70;
     background-color: #19db70;
     color: white;
-    width: 70%;   
+    width: 70%;
     border-bottom-left-radius: 30px;
     border-top-left-radius: 40px;
     border-bottom-right-radius: 100px;
@@ -100,75 +104,207 @@ a:hover {
     box-shadow: 0px 0px 3px #024b23;
     position: absolute;
 }
+
 .cadastrobtn:hover {
     background-color: #024b23 !important;
     border-color: transparent !important;
 }
 
-
-.meio-2{
-    margin-top: 0%;
+.meio-2 {
+    width: 100%;
     height: 50vh;
-    background-image: url(../img/bannercat.jpg);
-    background-color: #7bb680;
-    display: flex;
-    justify-content: right;
-    flex-direction: row;
+    background-image: url(../img/banner-gato.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+.meio-2 .banner-cat {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.meio-2 .banner-cat .left-cat {
+    width: 35%;
+    background-color: #83c589;
+    border-bottom-right-radius: 300px;
+    display: flex;
+    justify-content: left;
+}
+
+.meio-2 .banner-cat .left-cat .logo-cat {
+    display: flex;
+}
+
+.meio-2 .banner-cat .left-cat .logo-cat img {
+    width: 230px;
+    height: 200px;
+    margin-top: 20%;
+}
+
+.meio-2 .banner-cat .left-cat .text-cat {
+    display: inline;
+}
+
+.meio-2 .banner-cat .left-cat .text-cat h1 {
+    color: white !important;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 30%;
+}
+
+.meio-2 .banner-cat .left-cat p {
+    color: white !important;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+
+.meio-2 .banner-cat .center-cat {
+    width: 35%;
+    background-color: transparent;
+}
+
+.meio-2 .banner-cat .right-cat {
+    width: 35%;
+    background-color: #83c589;
+    border-top-left-radius: 300px;
+}
+
 /* sobre nos */
 
 
-.sobrenos{
-    margin-top: -2%;
-    height: auto;
-}
-
-.text-sn{
-    color: black;
-    font-size: large;
-}
-.sn{
-    background-color: #19db70;
-    height: 30vh;
-    margin-bottom: 15%;
-    margin-top: 10%;
+.sobre-nos {
+    background-color: white;
+    box-sizing: border-box;
     display: flex;
-}
-.pessoa{
-    margin-top: -70%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 80vh;
+    margin: 0;
 }
 
-.card h5{
+.sobre-nos h3 {
+    margin: 10px 0;
     color: #19db70;
 }
-.img-sn img{
-    width: 15%;
-    margin-right: 1%;
+
+.sobre-nos h6 {
+    margin: 5px 0;
+    text-transform: uppercase;
+    color: #19db70;
+
 }
+
+.sobre-nos p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #19db70;
+
+}
+
+.sobre-nos .card-container {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+    color: #B3B8CD;
+    padding-top: 30px;
+    position: relative;
+    width: 350px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.sobre-nos .card-container .pro {
+    color: #231E39;
+    background-color: #FEBB0B;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px 7px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.sobre-nos .card-container .round {
+    border: 1px solid #19db70;
+    border-radius: 50%;
+    padding: 7px;
+}
+.sobre-nos .card-container img {
+    width: 45%;
+    height: 160px;
+}
+.sobre-nos button.primary {
+    background-color: #19db70;
+    border: 1px solid #19db70;
+    border-radius: 3px;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    padding: 10px 25px;
+}
+
+.sobre-nos button.primary.ghost {
+    background-color: transparent;
+    color: #19db70;
+}
+
+.sobre-nos .skills {
+    background-color: #19db70;
+    text-align: left;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.sobre-nos .skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.sobre-nos .skills h6{
+    color: white;
+}
+
+.sobre-nos .skills ul li {
+    border: 1px solid white;
+    color: white;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 7px 7px 0;
+    padding: 7px;
+}
+
 
 
 /* contato */
-.contato{
+.contato {
     height: 88vh;
     background-color: #83c589;
 }
 
-.text-ctt{
+.text-ctt {
     color: white;
     font-size: large;
 }
-.text-ctt h1{
+
+.text-ctt h1 {
     font-size: 50px;
 }
-.ctt{
+
+.ctt {
     display: flex;
     height: 70vh;
 }
-.ctt-left{
+
+.ctt-left {
     background-color: white;
     width: 100%;
     height: auto;
@@ -176,13 +312,15 @@ a:hover {
     margin-bottom: 2%;
     border-radius: 10px;
 }
-.ctt-left img{
+
+.ctt-left img {
     width: 100%;
     height: 90%;
     margin-top: 4%;
     border-radius: 10px;
 }
-.ctt-right{
+
+.ctt-right {
     background-color: white;
     width: 100%;
     height: auto;
@@ -192,13 +330,13 @@ a:hover {
     border-radius: 10px;
 }
 
-.ctt-right h1{
+.ctt-right h1 {
     font-size: 35px;
     margin-top: 4%;
     margin-left: 2%;
 }
 
-.ctt-right p{
+.ctt-right p {
     font-size: 15px;
     margin-top: 2%;
     margin-left: 2%;
@@ -206,7 +344,7 @@ a:hover {
     color: rgb(54, 54, 54);
 }
 
-.ctt-form{
+.ctt-form {
     background-color: rgb(232, 232, 232) !important;
 }
 
@@ -214,7 +352,7 @@ a:hover {
     border-color: #19db70;
     background-color: #19db70;
     color: white;
-    width: 70%;   
+    width: 70%;
     border-bottom-left-radius: 30px;
     border-top-left-radius: 40px;
     border-bottom-right-radius: 100px;
@@ -224,6 +362,7 @@ a:hover {
     box-shadow: 0px 0px 3px #024b23;
     position: absolute;
 }
+
 .ctt-btn:hover {
     background-color: #024b23 !important;
     border-color: transparent !important;
@@ -231,39 +370,43 @@ a:hover {
 
 
 /* rodapé */
-.rodape{
+.rodape {
     background-color: #024b23 !important;
 }
 
-.footer{
+.footer {
     display: flex;
     height: auto;
     color: rgb(232, 232, 232);
 }
-.logo_footer img{
+
+.logo_footer img {
     width: 70%;
     height: auto;
 }
-.footer hr{
+
+.footer hr {
     background-color: rgb(232, 232, 232);
 }
-.div-rs{
+
+.div-rs {
     text-align: right;
 }
 
-.div-rs img{
+.div-rs img {
     width: 20%;
 }
 
-.hr-footer{
+.hr-footer {
     background-color: rgb(232, 232, 232);
 }
 
-.footer-end{
+.footer-end {
     width: 100%;
-    color:rgb(232, 232, 232);
+    color: rgb(232, 232, 232);
 }
-.copyr{
+
+.copyr {
     width: 100%;
 
 }

@@ -250,79 +250,71 @@
         </section>
     </section>
     <section class="meio-2">
+        <div class="banner-cat col-12">
+            <div class="left-cat">
+                <div class="logo-cat col-5">
+                    <img src="{{asset('img/LOGO_ARD-PETS-branca.png')}}" alt="">
+                </div>
+                <div class="text-cat col-6">
+                    <h1>ArdPets</h1>
+                    <p>Alimentador Automatico de Pets</p>
+                </div>
+            </div>
+            <div class="center-cat"></div>
+            <div class="right-cat"></div>
+        </div>
     </section>
     <!-- Sobre Nos -->
-    <section class="sobrenos mt-2 " id="sobrenos">
-        <div class="text-center txt-sn pt-2">
-            <h1>Conheça a equipe</h1>
-        </div>
-        <div class="sn">
-            <div class="mt-4 ml-5 p-3 text-center">
-                <div class="card pessoa" style="width: 15rem;">
-                    <img class="card-img-top" src="{{asset('img/cezar.jpg')}}" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Cezar Aparecido</h5>
-                        <p class="card-text">Desenvolvimento do Protótipo em Arduino</p>
-                        <hr>
-                        <a href="#" class="img-sn"><img src="{{asset('img/facebook_verde.png')}}" alt="Facebook"></a>
-                        <a href="#" class="img-sn"><img src="{{asset('img/instagram_verde.png')}}" alt="instagram"></a>
-                        <a href="#" class="img-sn"><img src="{{asset('img/twitter_verde.png')}}" alt="Twitter"></a>
-                    </div>
-                </div>
+    <section class="sobre-nos">
+        <div class="card-container">
+            <span class="pro">HDW</span>
+            <img class="round" src="{{asset('img/LucasA.jpeg')}}" alt="user" />
+            <h3>Lucas Adolfo</h3>
+            <h6>Hardware</h6>
+            <p>Arduino e Hardware</p>
+            <div class="buttons">
             </div>
-            <div class="mt-4 ml-3 p-3 text-center">
-                <div class="card pessoa" style="width: 15rem;">
-                    <img class="card-img-top" src="{{asset('img/Joao.jpg')}}" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">João Roberto</h5>
-                        <p class="card-text">Desenvolvimento Back-End e Documentação</p>
-                        <hr>
-                        <a href="#" class="img-sn"><img src="{{asset('img/facebook_verde.png')}}" alt="Facebook"></a>
-                        <a href="#" class="img-sn"><img src="{{asset('img/instagram_verde.png')}}" alt="instagram"></a>
-                        <a href="#" class="img-sn"><img src="{{asset('img/twitter_verde.png')}}" alt="Twitter"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-4 ml-3 p-3 text-center">
-                <div class="card pessoa" style="width: 15rem;">
-                    <img class="card-img-top" src="{{asset('img/Loane.jpeg')}}" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Loane Mendes</h5>
-                        <p class="card-text">Desenvolvimento Front-End e Gerente do projeto</p>
-                        <hr>
-                        <a href="#" class="img-sn"><img src="{{asset('img/facebook_verde.png')}}" alt="Facebook"></a>
-                        <a href="#" class="img-sn"><img src="{{asset('img/instagram_verde.png')}}" alt="instagram"></a>
-                        <a href="#" class="img-sn"><img src="{{asset('img/twitter_verde.png')}}" alt="Twitter"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-4 ml-3 p-3 text-center">
-                <div class="card pessoa" style="width: 15rem;">
-                    <img class="card-img-top" src="{{asset('img/LucasA.jpg')}}" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Lucas Adolfo</h5>
-                        <p class="card-text">Desenvolvimento do Protótipo em Arduino</p>
-                        <hr>
-                        <a href="#" class="img-sn"><img src="{{asset('img/facebook_verde.png')}}" alt="Facebook"></a>
-                        <a href="#" class="img-sn"><img src="{{asset('img/instagram_verde.png')}}" alt="instagram"></a>
-                        <a href="#" class="img-sn"><img src="{{asset('img/twitter_verde.png')}}" alt="Twitter"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-4 ml-3 p-3 text-center">
-                <div class="card pessoa" style="width: 15rem;">
-                    <img class="card-img-top" src="{{asset('img/LucasR.jpg')}}" alt="Imagem de capa do card">
-                    <div class="card-body">
-                        <h5 class="card-title">Lucas Ribeiro</h5>
-                        <p class="card-text">Desenvolvimento Front-End e Documentação</p>
-                        <hr>
-                        <a href="#" class="img-sn"><img src="{{asset('img/facebook_verde.png')}}" alt="Facebook"></a>
-                        <a href="#" class="img-sn"><img src="{{asset('img/instagram_verde.png')}}" alt="instagram"></a>
-                        <a href="#" class="img-sn"><img src="{{asset('img/twitter_verde.png')}}" alt="Twitter"></a>
-                    </div>
-                </div>
+            <div class="skills">
+                <h6>Skills</h6>
+                <ul>
+                    <li>UI / UX</li>
+                    <li>Front End Development</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node</li>
+                </ul>
             </div>
         </div>
+<!-- 
+        <div class="card-container">
+            <span class="pro">DEV</span>
+            <img class="round" src="{{asset('img/LucasR.jpg')}}" alt="user" />
+            <h3>Lucas Ribeiro</h3>
+            <h6>Programador</h6>
+            <p>User interface designer <br /> front-end e back Programador</p>
+            <div class="buttons">
+                <button class="primary">
+                    Message
+                </button>
+                <button class="primary ghost">
+                    Following
+                </button>
+            </div>
+            <div class="skills">
+                <h6>Skills</h6>
+                <ul>
+                    <li>UI / UX</li>
+                    <li>Front End Development</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node</li>
+                </ul>
+            </div>
+        </div> -->
     </section>
 
     <!-- Contato -->
