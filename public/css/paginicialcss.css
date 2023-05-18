@@ -176,7 +176,33 @@ a:hover {
 }
 
 /* sobre nos */
-
+.title-sn{
+    height: 10vh;
+    display: flex;
+    margin-top: 2%;
+    justify-content: center;
+    align-items: center;
+}
+.title01{
+    background-color: #83c589;
+    height: 2vh;
+}
+.title02{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.title02 h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #83c589;
+}
+.title03{
+    background-color: #83c589;
+    height: 2vh;
+}
 
 .sobre-nos {
     background-color: white;
@@ -184,28 +210,36 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    min-height: 80vh;
+    min-height: 65vh;
     margin: 0;
 }
 
 .sobre-nos h3 {
     margin: 10px 0;
-    color: #19db70;
+    color: #83c589;
 }
 
 .sobre-nos h6 {
     margin: 5px 0;
     text-transform: uppercase;
-    color: #19db70;
+    color: #83c589;
 
 }
 
 .sobre-nos p {
     font-size: 14px;
     line-height: 21px;
-    color: #19db70;
+    color: #83c589;
+}
 
+.sobre-nos .LucasA{
+    display: flex;
+    justify-content: right;
+}
+
+.sobre-nos .LucasR{
+    display: flex;
+    justify-content: left;
 }
 
 .sobre-nos .card-container {
@@ -233,7 +267,7 @@ a:hover {
 }
 
 .sobre-nos .card-container .round {
-    border: 1px solid #19db70;
+    border: 1px solid #83c589;
     border-radius: 50%;
     padding: 7px;
 }
@@ -241,32 +275,21 @@ a:hover {
     width: 45%;
     height: 160px;
 }
-.sobre-nos button.primary {
-    background-color: #19db70;
-    border: 1px solid #19db70;
-    border-radius: 3px;
-    color: white;
-    font-family: Montserrat, sans-serif;
-    font-weight: 500;
-    padding: 10px 25px;
-}
-
-.sobre-nos button.primary.ghost {
-    background-color: transparent;
-    color: #19db70;
-}
 
 .sobre-nos .skills {
-    background-color: #19db70;
+    background-color: #83c589;
     text-align: left;
     padding: 15px;
     margin-top: 30px;
+    
+    
 }
 
 .sobre-nos .skills ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 .sobre-nos .skills h6{
     color: white;
@@ -279,10 +302,23 @@ a:hover {
     display: inline-block;
     font-size: 12px;
     margin: 0 7px 7px 0;
+    justify-content: center;
     padding: 7px;
 }
-
-
+.sobre-nos .skills ul li i{
+    color: white;
+    transition: 0.5s;
+}
+.sobre-nos .skills ul li i:hover{
+    color: #024b23;
+}
+.sobre-nos .skills .social{
+    display: flex;
+    justify-content: center;
+}
+.sobre-nos .skills .social li{
+    border: 0;
+}
 
 /* contato */
 .contato {

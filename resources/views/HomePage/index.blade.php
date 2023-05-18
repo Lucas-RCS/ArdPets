@@ -265,56 +265,62 @@
         </div>
     </section>
     <!-- Sobre Nos -->
-    <section class="sobre-nos">
-        <div class="card-container">
-            <span class="pro">HDW</span>
-            <img class="round" src="{{asset('img/LucasA.jpeg')}}" alt="user" />
-            <h3>Lucas Adolfo</h3>
-            <h6>Hardware</h6>
-            <p>Arduino e Hardware</p>
-            <div class="buttons">
-            </div>
-            <div class="skills">
-                <h6>Skills</h6>
-                <ul>
-                    <li>UI / UX</li>
-                    <li>Front End Development</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Node</li>
-                </ul>
+    <section class="title-sn">
+        <div class="title01 col-5"></div>
+        <div class="title02 col-2">
+            <h1>Sobre Nós</h1>
+        </div>
+        <div class="title03 col-5"></div>
+    </section>
+    <section class="sobre-nos col-12">
+        <div class="LucasA col-6">
+            <div class="card-container">
+                <span class="pro">HDW</span>
+                <img class="round" src="{{asset('img/LucasA.jpeg')}}" alt="user" />
+                <h3>Lucas Adolfo</h3>
+                <h6>Hardware</h6>
+                <p>Arduino e Hardware</p>
+                <div class="buttons">
+                </div>
+                <div class="skills">
+                    <h6>Skills</h6>
+                    <ul>
+                        <li>HARDWARE</li>
+                        <li>ARDUINO</li>
+                        <li>INFRAESTRUTURA</li>
+                        <div class="social">
+                            <li><a href="#"><i class="fas fa-envelope fa-2x"></i></a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp fa-2x"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                        </div>
+                    </ul>
+                </div>
             </div>
         </div>
-<!-- 
-        <div class="card-container">
-            <span class="pro">DEV</span>
-            <img class="round" src="{{asset('img/LucasR.jpg')}}" alt="user" />
-            <h3>Lucas Ribeiro</h3>
-            <h6>Programador</h6>
-            <p>User interface designer <br /> front-end e back Programador</p>
-            <div class="buttons">
-                <button class="primary">
-                    Message
-                </button>
-                <button class="primary ghost">
-                    Following
-                </button>
+        <div class="LucasR col-6 R">
+            <div class="card-container">
+                <span class="pro">DEV</span>
+                <img class="round" src="{{asset('img/LucasR.jpg')}}" alt="user" />
+                <h3>Lucas Ribeiro</h3>
+                <h6>Programador</h6>
+                <p>Front-end e Back-end Programador</p>
+                <div class="buttons">
+                </div>
+                <div class="skills">
+                    <h6>Skills</h6>
+                    <ul>
+                        <li>UI / UX</li>
+                        <li>Front End Development</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <div class="social">
+                            <li><a href="#"><i class="fas fa-envelope fa-2x"></i></a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp fa-2x"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                        </div>
+                    </ul>
+                </div>
             </div>
-            <div class="skills">
-                <h6>Skills</h6>
-                <ul>
-                    <li>UI / UX</li>
-                    <li>Front End Development</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Node</li>
-                </ul>
-            </div>
-        </div> -->
     </section>
 
     <!-- Contato -->
@@ -357,7 +363,6 @@
     </section>
     </main>
 
-    <!-- Hello World!-->
     <!-- Rodapé -->
     <footer class="bg-dark text-white text-center rodape ">
         <div class="container">
