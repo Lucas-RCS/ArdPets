@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,1,0" />
 
+    <link rel="stylesheet" href="{{('lightbox2/dist/css/lightbox.min.css')}}" />
+    <link rel="stylesheet" href="{{('css/style.css')}}" />
+
     <title>Página Inicial</title>
 </head>
 
@@ -249,9 +252,14 @@
             </div>
         </section>
     </section>
+
+    <!-- meio-2 -->
     <section class="meio-2">
         <div class="banner-cat col-12">
             <div class="left-cat">
+            </div>
+            <div class="center-cat"></div>
+            <div class="right-cat">
                 <div class="logo-cat col-5">
                     <img src="{{asset('img/LOGO_ARD-PETS-branca.png')}}" alt="">
                 </div>
@@ -260,8 +268,60 @@
                     <p>Alimentador Automatico de Pets</p>
                 </div>
             </div>
-            <div class="center-cat"></div>
-            <div class="right-cat"></div>
+        </div>
+    </section>
+    <!-- galeria -->
+    <section class="galery">
+        <div class="galeria">
+            <h1>Galeria</h1>
+        </div>
+        <div class="grid-gallery">
+            <div class="grid-item">
+                <a href="{{asset('img/cao-img.jpg')}}" data-lightbox="gridImage">
+                    <img src="{{asset('img/cao-img.jpg')}}" />
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="{{asset('img/catdog-logo.jpg')}}" data-lightbox="gridImage">
+                    <img src="{{asset('img/catdog-logo.jpg')}}" />
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="{{asset('img/gato-img.jpg')}}" data-lightbox="gridImage">
+                    <img src="{{asset('img/gato-img.jpg')}}" />
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="{{asset('img/cao-img2.jpg')}}" data-lightbox="gridImage">
+                    <img src="{{asset('img/cao-img2.jpg')}}" />
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="{{asset('img/gato-img2.jpg')}}" data-lightbox="gridImage">
+                    <img src="{{asset('img/gato-img2.jpg')}}" />
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="{{asset('img/cao-img.jpg')}}" data-lightbox="gridImage">
+                    <img src="{{asset('img/cao-img.jpg')}}" />
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="{{asset('img/cao-img.jpg')}}" data-lightbox="gridImage">
+                    <img src="{{asset('img/cao-img.jpg')}}" />
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="{{asset('img/cao-img.jpg')}}" data-lightbox="gridImage">
+                    <img src="{{asset('img/cao-img.jpg')}}" />
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="{{asset('img/cao-img.jpg')}}" data-lightbox="gridImage">
+                    <img src="{{asset('img/cao-img.jpg')}}" />
+                </a>
+            </div>
+
         </div>
     </section>
     <!-- Sobre Nos -->
@@ -348,7 +408,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Email </label>
-                                <input type="email" class="form-control ctt-form" id="exampleFormControlInput1" placeholder="name@example.com">
+                                <input type="email" class="form-control ctt-form" id="exampleFormControlInput1" placeholder="name@exemplo.com">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label">Com o que podemos ajudar?</label>
@@ -368,31 +428,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 footer">
-                    <div class="logo_footer col-3 pb-3">
+                    <div class="logo_footer col-3 ">
                         <h3 class="pt-3 text-left">ArdPets</h3>
                         <hr>
                         <img src="{{asset('img/LOGO_ARD-PETS-branca.png')}}" alt="Logo_ArdPets">
                     </div>
                     <div class=" col-6">
-                        <h3 class="pt-3 text-right">Sobre o Projeto</h3>
+                        <h3 class="mt-3 text-right">Sobre o Projeto</h3>
                         <hr>
-                        <p class="text-right pt-4">
+                        <p class="text-right mt-3">
                             O ArdPets é um projeto realizado por alunos do curso de <br>
                             Análise e Desenvolvimento de sistemas, da Fatec Cruzeiro Profº Waldomiro May, onde utilizamos de
                             variados recursos para a construção de um sistema web, voltado á
                             alimentação dos pets, juntamente com um projeto em Arduino
                         </p>
                     </div>
-                    <div class=" col-3">
+                    <div class="col-3">
                         <h3 class="pt-3 text-right"> Redes Sociais</h3>
                         <hr>
                         <div class="div-rs mt-4">
-                            <a href="#" class="mr-3"><img src="{{asset('img/facebook.png')}}" alt="facebook"></a>
-                            <a href="#"><img src="{{asset('img/twitter.png')}}" alt="twitter"></a>
+                            <a href="#" class="mr-2"><i class="fab fa-facebook-square fa-2x"></i></a>
+                            <a href="#" class="mr-2"><i class="fab fa-instagram fa-2x"></i></a>
+                            <a href="#" class="mr-2"><i class="fab fa-twitter-square fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-square fa-2x"></i></a>
                         </div>
                         <div class="div-rs mt-3">
-                            <a href="#" class="mr-3"><img src="{{asset('img/instagram.png')}}" alt="instagram"></a>
-                            <a href="#"><img src="{{asset('img/google.png')}}" alt="google"></a>
+
                         </div>
                     </div>
                 </div>
@@ -402,7 +463,7 @@
         <div class="container">
             <div class="row">
                 <div class="footer-end">
-                    <p class="copyr">©2022 - 2023z Copyright - ArdPets</p>
+                    <p class="copyr">©2022 - 2023 Copyright - ArdPets</p>
                 </div>
             </div>
         </div>
@@ -410,6 +471,13 @@
     <script src="../js/jquery-3.5.1.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/app.js"></script>
+    <!-- jQuery CDN Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- Lightbox JS -->
+    <script src="../lightbox2/dist/js/lightbox.min.js"></script>
+    <!-- Custom js -->
+    <script src="../js/main.js"></script>
+
 </body>
 
 </html>

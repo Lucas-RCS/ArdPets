@@ -27,7 +27,7 @@ a:hover {
 }
 
 .btn-nav {
-    color: #1da85c !important;
+    color: white !important;
     transition: 0.3s;
 }
 
@@ -69,14 +69,13 @@ a:hover {
     background-color: #19db70;
 }
 
-
-
 .frase-cdt h1 {
     font-size: 50px;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     line-height: 75%;
     margin-top: 25%;
+    color: #231E39;
     display: flex;
 }
 
@@ -86,6 +85,7 @@ a:hover {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     line-height: 75%;
     margin-top: 15%;
+    color: #231E39;
 }
 
 
@@ -109,7 +109,7 @@ a:hover {
     background-color: #024b23 !important;
     border-color: transparent !important;
 }
-
+/* meio-2 */
 .meio-2 {
     width: 100%;
     height: 50vh;
@@ -134,36 +134,6 @@ a:hover {
     display: flex;
     justify-content: left;
 }
-
-.meio-2 .banner-cat .left-cat .logo-cat {
-    display: flex;
-}
-
-.meio-2 .banner-cat .left-cat .logo-cat img {
-    width: 230px;
-    height: 200px;
-    margin-top: 20%;
-}
-
-.meio-2 .banner-cat .left-cat .text-cat {
-    display: inline;
-}
-
-.meio-2 .banner-cat .left-cat .text-cat h1 {
-    color: white !important;
-    text-align: center;
-    font-size: 60px;
-    margin-top: 30%;
-}
-
-.meio-2 .banner-cat .left-cat p {
-    color: white !important;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 2%;
-}
-
-
 .meio-2 .banner-cat .center-cat {
     width: 35%;
     background-color: transparent;
@@ -173,33 +143,84 @@ a:hover {
     width: 35%;
     background-color: #83c589;
     border-top-left-radius: 300px;
+    display: flex;
+    justify-content: left;
 }
 
+.meio-2 .banner-cat .right-cat .logo-cat {
+    display: flex;
+}
+
+.meio-2 .banner-cat .right-cat .logo-cat img {
+    width: 230px;
+    height: 200px;
+    margin-top: 70%;
+    margin-left: 5%;
+}
+
+.meio-2 .banner-cat .right-cat .text-cat {
+    display: inline;
+}
+
+.meio-2 .banner-cat .right-cat .text-cat h1 {
+    color: white !important;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 65%;
+    margin-left: 15%;
+}
+
+.meio-2 .banner-cat .right-cat p {
+    color: white !important;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 15%;
+
+}
+
+/* galeria */
+.galeria h1{
+    font-size: 50px;
+    color: #231E39;
+}
+.galeria{
+    display: flex;
+    margin-top: 2%;
+    justify-content: center;
+    margin-bottom: -2%;
+}
+
+
 /* sobre nos */
-.title-sn{
+.title-sn {
     height: 10vh;
     display: flex;
     margin-top: 2%;
     justify-content: center;
     align-items: center;
 }
-.title01{
+
+.title01 {
     background-color: #83c589;
     height: 2vh;
 }
-.title02{
+
+.title02 {
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-.title02 h1{
+
+.title02 h1 {
     font-size: 40px;
     text-transform: uppercase;
     color: #83c589;
 }
-.title03{
+
+.title03 {
     background-color: #83c589;
     height: 2vh;
 }
@@ -232,12 +253,12 @@ a:hover {
     color: #83c589;
 }
 
-.sobre-nos .LucasA{
+.sobre-nos .LucasA {
     display: flex;
     justify-content: right;
 }
 
-.sobre-nos .LucasR{
+.sobre-nos .LucasR {
     display: flex;
     justify-content: left;
 }
@@ -271,6 +292,7 @@ a:hover {
     border-radius: 50%;
     padding: 7px;
 }
+
 .sobre-nos .card-container img {
     width: 45%;
     height: 160px;
@@ -281,8 +303,8 @@ a:hover {
     text-align: left;
     padding: 15px;
     margin-top: 30px;
-    
-    
+
+
 }
 
 .sobre-nos .skills ul {
@@ -291,7 +313,8 @@ a:hover {
     padding: 0;
     text-align: center;
 }
-.sobre-nos .skills h6{
+
+.sobre-nos .skills h6 {
     color: white;
 }
 
@@ -305,18 +328,22 @@ a:hover {
     justify-content: center;
     padding: 7px;
 }
-.sobre-nos .skills ul li i{
+
+.sobre-nos .skills ul li i {
     color: white;
     transition: 0.5s;
 }
-.sobre-nos .skills ul li i:hover{
+
+.sobre-nos .skills ul li i:hover {
     color: #024b23;
 }
-.sobre-nos .skills .social{
+
+.sobre-nos .skills .social {
     display: flex;
     justify-content: center;
 }
-.sobre-nos .skills .social li{
+
+.sobre-nos .skills .social li {
     border: 0;
 }
 
@@ -407,13 +434,13 @@ a:hover {
 
 /* rodapé */
 .rodape {
-    background-color: #024b23 !important;
+    background-color: #1f623d !important;
 }
 
 .footer {
     display: flex;
-    height: auto;
-    color: rgb(232, 232, 232);
+    height: 27vh;
+    color: white;
 }
 
 .logo_footer img {
@@ -427,6 +454,14 @@ a:hover {
 
 .div-rs {
     text-align: right;
+}
+
+.div-rs i{
+    color: white;
+    transition: 0.2s;
+}
+.div-rs i:hover{
+    color: #19db70;
 }
 
 .div-rs img {
@@ -444,7 +479,6 @@ a:hover {
 
 .copyr {
     width: 100%;
-
 }
 
 
@@ -456,6 +490,7 @@ verde mais claro: #d3fbe5;
 verde escuro: #19db70;
 verde  mais escuro: #024b23;
 verde mais escuro ainda: #013016;
+verdin: #63ccb3;
 vermelho: #b91919;
 cinza: #808080;
 verde musgo: #83c589
