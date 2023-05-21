@@ -287,8 +287,8 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{{asset('img/gato-img.jpg')}}" data-lightbox="gridImage">
-                    <img src="{{asset('img/gato-img.jpg')}}" />
+                <a href="{{asset('img/protot-img.jpeg')}}" data-lightbox="gridImage">
+                    <img src="{{asset('img/protot-img.jpeg')}}" />
                 </a>
             </div>
             <div class="grid-item">
@@ -297,31 +297,30 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{{asset('img/gato-img2.jpg')}}" data-lightbox="gridImage">
-                    <img src="{{asset('img/gato-img2.jpg')}}" />
+                <a href="{{asset('img/cat-img2.jpg')}}" data-lightbox="gridImage">
+                    <img src="{{asset('img/cat-img2.jpg')}}" />
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{{asset('img/cao-img.jpg')}}" data-lightbox="gridImage">
-                    <img src="{{asset('img/cao-img.jpg')}}" />
+                <a href="{{asset('img/cao-img3.jpg')}}" data-lightbox="gridImage">
+                    <img src="{{asset('img/cao-img3.jpg')}}" />
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{{asset('img/cao-img.jpg')}}" data-lightbox="gridImage">
-                    <img src="{{asset('img/cao-img.jpg')}}" />
+                <a href="{{asset('img/protot-img3.jpeg')}}" data-lightbox="gridImage">
+                    <img src="{{asset('img/protot-img3.jpeg')}}" />
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{{asset('img/cao-img.jpg')}}" data-lightbox="gridImage">
-                    <img src="{{asset('img/cao-img.jpg')}}" />
+                <a href="{{asset('img/protot-img2.jpeg')}}" data-lightbox="gridImage">
+                    <img src="{{asset('img/protot-img2.jpeg')}}" />
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{{asset('img/cao-img.jpg')}}" data-lightbox="gridImage">
-                    <img src="{{asset('img/cao-img.jpg')}}" />
+                <a href="{{asset('img/cao-img4.jpg')}}" data-lightbox="gridImage">
+                    <img src="{{asset('img/cao-img4.jpg')}}" />
                 </a>
             </div>
-
         </div>
     </section>
     <!-- Sobre Nos -->
