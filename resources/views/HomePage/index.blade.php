@@ -124,10 +124,13 @@
                                 </div>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Sobre Nós</a></a>
+                                <a class="nav-link" href="#galery">Galeria</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Contato</a>
+                                <a class="nav-link" href="#title-sn">Sobre Nós</a></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#contato">Contato</a>
                             </li>
                         </ul>
                         <form class="form-inline my-2 my-lg-0">
@@ -271,7 +274,7 @@
         </div>
     </section>
     <!-- galeria -->
-    <section class="galery">
+    <section class="galery" id="galery">
         <div class="galeria">
             <h1>Galeria</h1>
         </div>
@@ -324,7 +327,7 @@
         </div>
     </section>
     <!-- Sobre Nos -->
-    <section class="title-sn">
+    <section class="title-sn" id="title-sn">
         <div class="title01 col-5"></div>
         <div class="title02 col-2">
             <h1>Sobre Nós</h1>

@@ -25,7 +25,13 @@ a:hover {
     background-color: transparent !important;
     font-size: 20px;
 }
-
+.nav-link{
+    color: white !important;
+    transition: 0.5s;
+}
+.nav-link:hover{
+    color: #024b23 !important;
+}
 .btn-nav {
     color: white !important;
     transition: 0.3s;
