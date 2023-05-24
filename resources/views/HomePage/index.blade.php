@@ -256,23 +256,6 @@
         </section>
     </section>
 
-    <!-- meio-2 -->
-    <section class="meio-2">
-        <div class="banner-cat col-12">
-            <div class="left-cat">
-            </div>
-            <div class="center-cat"></div>
-            <div class="right-cat">
-                <div class="logo-cat col-5">
-                    <img src="{{asset('img/LOGO_ARD-PETS-branca.png')}}" alt="">
-                </div>
-                <div class="text-cat col-6">
-                    <h1>ArdPets</h1>
-                    <p>Alimentador Automatico de Pets</p>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- galeria -->
     <section class="galery" id="galery">
         <div class="galeria">
@@ -323,6 +306,25 @@
                 <a href="{{asset('img/cao-img4.jpg')}}" data-lightbox="gridImage">
                     <img src="{{asset('img/cao-img4.jpg')}}" />
                 </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- meio-2 -->
+    <section class="meio-2">
+        <div class="banner-cat col-12">
+            <div class="left-cat">
+            </div>
+            <div class="center-cat"></div>
+            <div class="right-cat">
+                <div class="logo-cat col-5">
+                    <img src="{{asset('img/LOGO_ARD-PETS-branca.png')}}" alt="">
+                </div>
+                <div class="text-cat col-6">
+                    <h1>ArdPets</h1>
+                    <p>Alimentador Automatico de Pets</p>
+                </div>
             </div>
         </div>
     </section>
