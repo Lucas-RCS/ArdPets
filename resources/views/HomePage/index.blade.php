@@ -398,10 +398,10 @@
                     <div class="col-7 ctt-left">
                         <img src="{{asset('img/dogs_ctt.jpg')}}" alt="">
                     </div>
-                    <div class="col-4 ctt-right text-left">
+                    <div class="col-5 ctt-right ">
                         <h1>Entrar em contato</h1>
-                        <p>Tem algum inquérito ou algum feedback para <br>
-                            nós? Preencha o formulário abaixo para <br>
+                        <p>Tem algum inquérito ou algum feedback para
+                            nós? Preencha o formulário abaixo para
                             entrar em contato com nossa equipe
                         </p>
                         <form action="">

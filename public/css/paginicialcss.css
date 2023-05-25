@@ -403,14 +403,16 @@ a:hover {
     font-size: 35px;
     margin-top: 4%;
     margin-left: 2%;
+    text-align: center;
 }
 
 .ctt-right p {
     font-size: 15px;
     margin-top: 2%;
     margin-left: 2%;
-    text-align: justify !important;
     color: rgb(54, 54, 54);
+    text-align: center;
+
 }
 
 .ctt-form {
