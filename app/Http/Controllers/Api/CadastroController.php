@@ -8,7 +8,9 @@ use Illuminate\Http\Request;
 class CadastroController extends Controller
 {
     public function status(){
-        return ['status: ' => 'olá',
-                'status: '=> 'tem uma API funcionando aqui'];
+        return [
+                    'status: '=> 'tem uma API funcionando aqui',
+                    'msg: ' => 'Olá'
+                ];
     }
 }
