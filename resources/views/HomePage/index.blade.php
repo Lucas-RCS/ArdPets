@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,1,0" />
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{('css/style2.css')}}">
     <link rel="stylesheet" href="{{('lightbox2/dist/css/lightbox.min.css')}}" />
     <link rel="stylesheet" href="{{('css/style.css')}}" />
 
@@ -27,76 +29,6 @@
 
     <section class="bg-cao">
         <header>
-            <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="{{ asset('img/LOGO_ARD-PETS-branca.png')}}" alt="ArdPet">ArdPets</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active ">
-                                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item dropdown active">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WikiPets</a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Cães</a>
-                                    <a class="dropdown-item" href="#">Gatos</a>
-                                    <div class="dropdown-divider">
-                                    </div>
-                                    <a class="dropdown-item" href="#">Rações</a>
-                                    <a class="dropdown-item" href="#">Guia</a>
-                                </div>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link sn-nav" href="#sobrenos">Sobre Nós</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#contato">Contato</a>
-                            </li>
-
-                        </ul>
-
-                        <button class="btn btn-outline-primary my-2 my-sm-0 btn-sair" data-toggle="modal" data-target="#ExemploModalCentralizado2" type="submit"><img src="{{ asset('img/perfil.png') }}" alt="Perfil"></button>
-
-                        <div class="modal fade" id="ExemploModalCentralizado2" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="TituloModalCentralizado">Atualizar Perfil</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body ">
-                                        <form method="post" action="/user/update">
-                                            @csrf
-                                            <div class="form-group">
-                                                <label for="exampleFormControlInput1">Email</label>
-                                                <input type="email" name="UpdateUserEmail" class="form-control " id="exampleFormControlInput1" placeholder="Novo Nome">
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="exampleFormControlInput1">Senha</label>
-                                                <input type="password" name="UpdateUserPasswd" class="form-control " id="exampleFormControlInput1" placeholder="Nova Senha">
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="submit" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                                                <button type="submit" class="btn btn-success ">Enviar</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <form method="post" action="/logout">
-                            @csrf
-                            <button type="submit" class="btn btn-outline-success my-2 my-sm-0 btn-sair2"><img src="{{asset('img/opcao-de-sair.png')}}" alt="Sair"></button>
-                        </form>
-                    </div>
-                </div>
-            </nav> -->
             <nav>
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                     <a class="navbar-brand" href="#">
@@ -147,13 +79,13 @@
                                         <div class="modal-body ">
                                             <form method="post" action="/user/update">
                                                 @csrf
-                                                <div class="form-group">
-                                                    <label for="exampleFormControlInput1">Email</label>
+                                                <div class="form-group email">
+                                                    <label for="exampleFormControlInput1">Email: </label>
                                                     <input type="email" name="UpdateUserEmail" class="form-control " id="exampleFormControlInput1" placeholder="Novo Nome">
                                                 </div>
 
-                                                <div class="form-group">
-                                                    <label for="exampleFormControlInput1">Senha</label>
+                                                <div class="form-group senha">
+                                                    <label for="exampleFormControlInput1">Senha: </label>
                                                     <input type="password" name="UpdateUserPasswd" class="form-control " id="exampleFormControlInput1" placeholder="Nova Senha">
                                                 </div>
                                                 <div class="modal-footer">
@@ -166,7 +98,10 @@
                                 </div>
                             </div>
                         </form>
-                        <a href="#"><i class="fa fa-sign-out fa-2x btn-nav logout pt-1 " alt="Voltar"></i></a>
+                        <form method="post" action="/logout">
+                            @csrf
+                            <button type="submit" class="btn-nav-logout"><i class="fa fa-sign-out fa-2x btn-nav logout pt-1 " alt="Voltar"></i></button>
+                        </form>
                     </div>
                 </nav>
             </nav>
@@ -178,14 +113,10 @@
                 <div class="col-5">
                     <img src="{{asset('img/LOGO_ARD-PETS.png')}}" class="" alt="Foto_Logo_ArdPet">
                 </div>
-                <hr>
                 <div class="col-6 pet-cdt">
                     <div class="frase-cdt">
-                        @foreach($Pets as $pet)
-                        <h1>{{ $pet->nome }}</h1>
-                        <p>{{ $pet->porte }}</p>
-                        <p>{{ $pet->idade }}</p>
-                        @endforeach
+                        <h1>Cadastre o seu Pet</h1>
+                        <p>Torne sua vida e de seu pet mais facil!!!</p>
                     </div>
 
                     <!-- Botão para acionar modal -->
@@ -229,13 +160,13 @@
                                             <div class="row">
                                                 <div class="form-group col-6">
                                                     <label for="exampleFormControlSelect1">Hora:</label>
-                                                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Horas" name="CreatePetName" min="00" max="23">
+                                                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Horas" name="CreatePetTimeHour" min="00" max="23">
                                                     </select>
                                                 </div>
 
                                                 <div class="form-group col-6">
                                                     <label for="exampleFormControlSelect1">Minutos:</label>
-                                                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Minutos" name="CreatePetName" min="00" max="59">
+                                                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Minutos" name="CreatePetTimeMin" min="00" max="59">
                                                     </select>
                                                 </div>
                                             </div>
@@ -254,6 +185,86 @@
             </div>
             </div>
         </section>
+    </section>
+    <!-- AGENDA -->
+    <section class="agenda" id="agenda">
+        <section class="ftco-section">
+            <div class="container">
+                <div class="row">
+                    <div class="pet-left col-4">
+                        @foreach($Pets as $pet)
+                        <h1>Nome: {{ $pet->nome }}</h1>
+                        <p>Porte: {{ $pet->porte }} <br>
+                        Idade: {{ $pet->idade }}</p>
+                        @endforeach
+                    </div>
+                    <div class="col-8">
+                        <div class="content w-100">
+                            <div class="calendar-container">
+                                <div class="calendar">
+                                    <div class="year-header">
+                                        <span class="left-button fa fa-chevron-left" id="prev"> </span>
+                                        <span class="year" id="label"></span>
+                                        <span class="right-button fa fa-chevron-right" id="next"> </span>
+                                    </div>
+                                    <table class="months-table w-100">
+                                        <tbody>
+                                            <tr class="months-row">
+                                                <td class="month">Jan</td>
+                                                <td class="month">Fev</td>
+                                                <td class="month">Mar</td>
+                                                <td class="month">Abr</td>
+                                                <td class="month">Mai</td>
+                                                <td class="month">Jun</td>
+                                                <td class="month">Jul</td>
+                                                <td class="month">Ago</td>
+                                                <td class="month">Set</td>
+                                                <td class="month">Out</td>
+                                                <td class="month">Nov</td>
+                                                <td class="month">Dezc</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table class="days-table w-100">
+                                        <td class="day">Dom</td>
+                                        <td class="day">Seg</td>
+                                        <td class="day">Ter</td>
+                                        <td class="day">Qua</td>
+                                        <td class="day">Qui</td>
+                                        <td class="day">Sex</td>
+                                        <td class="day">Sab</td>
+                                    </table>
+                                    <div class="frame">
+                                        <table class="dates-table w-100">
+                                            <tbody class="tbody">
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button class="button" id="add-button">Adicionar Evento</button>
+                                </div>
+                            </div>
+                            <div class="events-container">
+                            </div>
+                            <div class="dialog" id="dialog">
+                                <h2 class="dialog-header"> Adicionar Novo Evento </h2>
+                                <form class="form" id="form">
+                                    <div class="form-container" align="center">
+                                        <label class="form-label" id="valueFromMyButton" for="name">Nome Evento</label>
+                                        <input class="input" type="text" id="name" maxlength="36">
+                                        <label class="form-label" id="valueFromMyButton" for="count">Horario</label>
+                                        <input class="input" type="time" id="count">
+                                        <input type="button" value="Cancelar" class="button" id="cancel-button">
+                                        <input type="button" value="OK" class="button button-white" id="ok-button">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
     </section>
 
 
@@ -294,8 +305,8 @@
                 </a>
             </div>
             <div class="grid-item">
-                <a href="{{asset('img/protot-img3.jpeg')}}" data-lightbox="gridImage">
-                    <img src="{{asset('img/protot-img3.jpeg')}}" />
+                <a href="{{asset('img/foto_caixa2023.jpg')}}" data-lightbox="gridImage">
+                    <img src="{{asset('img/foto_caixa2023.jpg')}}" />
                 </a>
             </div>
             <div class="grid-item">
@@ -310,7 +321,7 @@
             </div>
         </div>
     </section>
-        <!-- meio-2 -->
+    <!-- meio-2 -->
     <section class="meio-2">
         <div class="banner-cat col-12">
             <div class="left-cat">
@@ -466,7 +477,7 @@
         <div class="container">
             <div class="row">
                 <div class="footer-end">
-                    <p class="copyr">©2022 - 2023 Copyright - ArdPets</p>
+                    <p class="copyr">&#169 2022 - 2023 | ArdPets | Todos direitos reservados</p>
                 </div>
             </div>
         </div>
@@ -480,6 +491,8 @@
     <script src="../lightbox2/dist/js/lightbox.min.js"></script>
     <!-- Custom js -->
     <script src="../js/main.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/main2.js"></script>
 
 </body>
 

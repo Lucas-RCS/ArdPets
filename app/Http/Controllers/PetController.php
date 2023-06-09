@@ -21,9 +21,9 @@ class PetController extends Controller
             $request->CreatePetTimeHour,
             $request->CreatePetTimeMin,
         ];
-        dd($Pet);
 
-        $Sql = "insert into pet values (?,?,?,?,?)";
+        // dd($Pet);
+        $Sql = "INSERT into pets (id_dono,nome,porte,idade,hora,minuto) values (?,?,?,?,?,?)";
         DB::insert($Sql,$Pet);
         return redirect('/principal');
     }

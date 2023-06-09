@@ -19,7 +19,7 @@ class HomeController extends Controller
             return to_route('User.Index');
 
         //buscar dados no mysql
-        $Sql = "Select nome,porte,idade from pet where id_dono=?";
+        $Sql = "Select nome,porte,idade from pets where id_dono=?";
 
         //Msg de sucesso
         $MsgSucesso = $request->session()->get('Msg.Sucesso');

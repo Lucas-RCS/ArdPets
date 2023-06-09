@@ -25,25 +25,47 @@ a:hover {
     background-color: transparent !important;
     font-size: 20px;
 }
-.nav-link{
+
+.nav-link {
     color: white !important;
     transition: 0.5s;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: #024b23 !important;
+    font-size: 21.5px;
 }
+
 .btn-nav {
     color: white !important;
+    width: 90%;
     transition: 0.3s;
 }
 
 .btn-nav:hover {
+    width: 100%;
     color: #024b23 !important;
 }
 
-.logout {
-    margin-left: 5px;
+.btn-nav-logout {
+    background-color: transparent !important;
+    border: 0;
+    margin-left: 10%;
 }
+
+.navbar .form-inline .modal .modal-body .email {
+    margin-top: 2%;
+}
+
+.navbar .form-inline .modal .modal-body .senha {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.navbar .form-inline .modal .modal-body .form-group input {
+    margin-left: 2%;
+}
+
 
 .meio-1 {
     width: 100%;
@@ -75,6 +97,13 @@ a:hover {
     background-color: #19db70;
 }
 
+.pet-cdt {
+    margin-left: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .frase-cdt h1 {
     font-size: 50px;
     text-align: center;
@@ -100,7 +129,8 @@ a:hover {
     background-color: #19db70;
     color: white;
     width: 70%;
-    border-bottom-left-radius: 30px;
+    height: 40px;
+    border-bottom-left-radius: 40px;
     border-top-left-radius: 40px;
     border-bottom-right-radius: 100px;
     font-weight: bold;
@@ -109,12 +139,63 @@ a:hover {
     margin-top: 15%;
     box-shadow: 0px 0px 3px #024b23;
     position: absolute;
+    transition: 0.5s;
+
 }
 
 .cadastrobtn:hover {
     background-color: #024b23 !important;
     border-color: transparent !important;
+    width: 72%;
+    height: 45px;
+    border-radius: 30px;
 }
+
+/* agenda */
+.agenda {
+    background-color: white;
+    height: auto;
+}
+
+.agenda .container {
+    height: auto;
+}
+
+.agenda .container .pet-left {
+    background-image: url(../img/pet-carteirinha2.jpg);
+    height: 20vh;
+    align-self: center;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.agenda .container .pet-left h1 {
+    margin-top: 5%;
+    font-size: 30px;
+}
+.agenda .container .pet-left p {
+    margin-top: 3%;
+    font-size: 20px;
+}
+
+
+/* galeria */
+.galeria h1 {
+    font-size: 50px;
+    color: #231E39;
+}
+
+.galeria {
+    display: flex;
+    margin-top: 2%;
+    justify-content: center;
+    margin-bottom: -2%;
+}
+
+
 /* meio-2 */
 .meio-2 {
     width: 100%;
@@ -140,6 +221,7 @@ a:hover {
     display: flex;
     justify-content: left;
 }
+
 .meio-2 .banner-cat .center-cat {
     width: 35%;
     background-color: transparent;
@@ -184,19 +266,6 @@ a:hover {
     margin-left: 15%;
 
 }
-
-/* galeria */
-.galeria h1{
-    font-size: 50px;
-    color: #231E39;
-}
-.galeria{
-    display: flex;
-    margin-top: 2%;
-    justify-content: center;
-    margin-bottom: -2%;
-}
-
 
 /* sobre nos */
 .title-sn {
@@ -448,7 +517,7 @@ a:hover {
 .footer {
     display: flex;
     height: 27vh;
-    color: white;
+    color: white !important;
 }
 
 .logo_footer img {
@@ -464,11 +533,12 @@ a:hover {
     text-align: right;
 }
 
-.div-rs i{
+.div-rs i {
     color: white;
     transition: 0.2s;
 }
-.div-rs i:hover{
+
+.div-rs i:hover {
     color: #19db70;
 }
 

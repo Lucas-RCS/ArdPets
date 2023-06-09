@@ -29,16 +29,17 @@ class LoginController extends Controller
         // Pegando as informacoes do usuario
         $AuxUser = [$request->CreateUserEmail];
         $User = [
+            $request->CreateUserName,
             $request->CreateUserEmail,
             $request->CreateUserPasswd
         ];
-        $Sql = "select id,email,senha from dono where email=?";
+        $Sql = "SELECT id,nome,email,senha from dono where email=?";
 
         if (DB::select($Sql, $AuxUser) != null) {
             $request->session()->flash('Msg.Warning',"Conta email já cadastrado!");
             return to_route('User.Create');
         } else {
-            $Sql = "insert into dono (email,senha) values (?,?)";
+            $Sql = "INSERT into dono (nome,email,senha) values (?,?,?)";
             DB::insert($Sql, $User);
             $request->session()->flash('Msg.Sucess',"Conta criado com sucesso!");
             return to_route('User.Index');
@@ -48,7 +49,7 @@ class LoginController extends Controller
     public function login(Request $request)
     {
         $User = [$request->IndexUserEmail];
-        $Sql = "select id,email,senha from dono where email=?";
+        $Sql = "SELECT id,email,senha from dono where email=?";
         $NewNome = DB::select($Sql, $User);
 
 

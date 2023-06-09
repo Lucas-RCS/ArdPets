@@ -20,7 +20,7 @@
                     <form method="post" action="/criado">
                         @csrf
                         <div class="single-input">
-                            <input type="text" class="input" id="nome" name="CreateUserEmail" maxlength="25" required>
+                            <input type="text" class="input" id="nome" name="CreateUserName" maxlength="25" required>
                             <label for="Nome">Nome</label>
                         </div>
                         <div class="single-input">

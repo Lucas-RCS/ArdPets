@@ -39,7 +39,10 @@ Route::controller(HomeController::class)->group(function(){
     Route::get('/principal','index')->name('HomePage.Index');
     //post
     Route::post('/logout', 'logout')->name('HomePage.Logout');
-    Route::post('/user/update','update')->name('HomePage.Update');
+    Route::post('/user/update','update')->name('HomePage.update');
 });
 
 Route::post('/pet/store', [PetController::class,'store']);
+
+Route::post('/enviar-sinal', 'ArduinoController@enviarSinal');
+
