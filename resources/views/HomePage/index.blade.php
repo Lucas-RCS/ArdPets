@@ -56,6 +56,9 @@
                                 </div>
                             </li>
                             <li class="nav-item active">
+                                <a class="nav-link" href="#agenda">Agenda</a>
+                            </li>
+                            <li class="nav-item active">
                                 <a class="nav-link" href="#galery">Galeria</a>
                             </li>
                             <li class="nav-item active">
@@ -177,11 +180,6 @@
                                             <button type="submit" class="btn btn-success ">Enviar</button>
                                         </div>
                                     </form>
-                                    <form action="/enviar-sinal-arduino" method="POST">
-                                        @csrf
-                                        <button type="submit" class="btn btn-white sync-ard"><i class="fad fa-sync-alt fa-spin" 
-                                        style="--fa-primary-color: #19db70; --fa-secondary-color: #024b23;"></i> Sincronizar Arduino</button>
-                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -195,6 +193,13 @@
     <section class="agenda" id="agenda">
         <section class="ftco-section">
             <div class="container">
+                <div class="col-12 btn-sync-ard">
+                    <form action="/enviar-sinal-arduino" method="POST">
+                        @csrf
+                        <button type="submit" class="btn btn-white sync-ard"><i class="fad fa-sync-alt fa-spin">
+                            </i> Sincronizar Arduino</button>
+                    </form>
+                </div>
                 <div class="row">
                     <div class="pet-left col-4">
                         @foreach($Pets as $pet)
@@ -414,7 +419,7 @@
                     <div class="col-7 ctt-left">
                         <img src="{{asset('img/dogs_ctt.jpg')}}" alt="">
                     </div>
-                    <div class="col-5 ctt-right ">
+                    <div class="col-5 ctt-right">
                         <h1>Entrar em contato</h1>
                         <p>Tem algum inquérito ou algum feedback para
                             nós? Preencha o formulário abaixo para
@@ -422,15 +427,15 @@
                         </p>
                         <form action="">
                             <div class="mb-3 ">
-                                <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                                <label for="exampleFormControlInput1" class="form-label-ctt">Nome</label>
                                 <input type="text" class="form-control ctt-form" id="exampleFormControlInput1" placeholder="Nome Completo">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Email </label>
+                                <label for="exampleFormControlInput1" class="form-label-ctt">Email </label>
                                 <input type="email" class="form-control ctt-form" id="exampleFormControlInput1" placeholder="name@exemplo.com">
                             </div>
                             <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Com o que podemos ajudar?</label>
+                                <label for="exampleFormControlTextarea1" class="form-label-ctt">Com o que podemos ajudar?</label>
                                 <textarea class="form-control ctt-form" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary ctt-btn">Enviar</button>
@@ -457,19 +462,20 @@
                         <hr>
                         <p class="text-right mt-3">
                             O ArdPets é um projeto realizado por alunos do curso de <br>
-                            Análise e Desenvolvimento de sistemas, da Fatec Cruzeiro Profº Waldomiro May, onde utilizamos de
+                            Análise e Desenvolvimento de Sistemas, da Fatec Cruzeiro Profº Waldomiro May, onde utilizamos de
                             variados recursos para a construção de um sistema web, voltado á
-                            alimentação dos pets, juntamente com um projeto em Arduino
+                            alimentação dos pets, juntamente com o projeto em Arduino
                         </p>
                     </div>
                     <div class="col-3">
                         <h3 class="pt-3 text-right"> Redes Sociais</h3>
                         <hr>
                         <div class="div-rs mt-4">
-                            <a href="#" class="mr-2"><i class="fab fa-facebook-square fa-2x"></i></a>
-                            <a href="#" class="mr-2"><i class="fab fa-instagram fa-2x"></i></a>
-                            <a href="#" class="mr-2"><i class="fab fa-twitter-square fa-2x"></i></a>
-                            <a href="#"><i class="fab fa-google-plus-square fa-2x"></i></a>
+                            <a href="#" class="mr-2 face"><i class="fab fa-facebook-square fa-2x"></i></a>
+                            <a href="#" class="mr-2 insta"><i class="fab fa-instagram fa-2x"></i></a>
+                            <a href="#" class="mr-2 tt"><i class="fab fa-twitter-square fa-2x"></i></a>
+                            <a href="#" class="mr-2 git"><i class="fab fab fa-github-square fa-2x"></i></a>
+                            <a href="#" class="google"><i class="fab fa-google-plus-square fa-2x"></i></a>
                         </div>
                         <div class="div-rs mt-3">
 

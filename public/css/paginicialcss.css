@@ -150,15 +150,26 @@ a:hover {
     height: 45px;
     border-radius: 30px;
 }
+
+.btn-sync-ard{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
 .sync-ard{
     width: 100%;
+    color: black !important;
     background-color: rgb(240, 240, 240) !important;
+    transition: 0.3s;
 }
-.sync-ard :hover{
-    background-color: red !important;
+.sync-ard:hover{
+    background-color: #ccc !important;
+    color: white !important;
 }
-
-
+.sync-ard .fa-spin{
+    --fa-primary-color: #19db70; 
+    --fa-secondary-color: #024b23;
+}
 /* agenda */
 .agenda {
     background-color: white;
@@ -495,6 +506,11 @@ a:hover {
 .ctt-form {
     background-color: rgb(232, 232, 232) !important;
 }
+.form-label-ctt{
+    color: rgb(54, 54, 54) !important;
+}
+
+
 
 .ctt-btn {
     border-color: #19db70;
@@ -546,13 +562,22 @@ a:hover {
     transition: 0.2s;
 }
 
-.div-rs i:hover {
-    color: #19db70;
+.div-rs .face i:hover {
+    color: #254fca;
+}
+.div-rs .insta i:hover {
+    color: #ff269d;
+}
+.div-rs .tt i:hover {
+    color: #50e0fc;
+}
+.div-rs .git i:hover {
+    color: #282828;
+}
+.div-rs .google i:hover {
+    color: #e61010;
 }
 
-.div-rs img {
-    width: 20%;
-}
 
 .hr-footer {
     background-color: rgb(232, 232, 232);

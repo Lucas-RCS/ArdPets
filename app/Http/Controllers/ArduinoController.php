@@ -10,7 +10,7 @@ class ArduinoController extends Controller
     public function enviarSinal()
     {
         // Conecte-se à porta do Arduino e envie o sinal
-        $porta = '/dev/ttyUSB0'; // substitua pela porta correta do seu Arduino
+        $porta = '/dev/ttyUSB0'; // porta do Arduino
         $mensagem = '1'; // sinal que você deseja enviar ao Arduino
         
         // Abra a porta serial

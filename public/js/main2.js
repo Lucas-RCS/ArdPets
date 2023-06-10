@@ -181,7 +181,7 @@ function show_events(events, month, day) {
     // If there are no events for this date, notify the user
     if(events.length===0) {
         var event_card = $("<div class='event-card'></div>");
-        var event_name = $("<div class='event-name'>Não há eventos programados para "+day+" de "+month+".</div>");
+        var event_name = $("<div class='event-name'>Não há eventos programados para "+day+" de " +month+".</div>");
         $(event_card).css({ "border-left": "10px solid #FF1744" });
         $(event_card).append(event_name);
         $(".events-container").append(event_card);
