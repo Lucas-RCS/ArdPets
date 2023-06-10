@@ -120,7 +120,7 @@
                     </div>
 
                     <!-- Botão para acionar modal -->
-                    <button type="button" class="btn btn-primary cadastrobtn" data-toggle="modal" data-target="#ExemploModalCentralizado">
+                    <button type="button" class="btn btn-success cadastrobtn" data-toggle="modal" data-target="#ExemploModalCentralizado">
                         Cadastrar
                     </button>
 
@@ -173,9 +173,14 @@
                                         </div>
 
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                            <button type="button" class="btn btn-warning" data-dismiss="modal">Fechar</button>
                                             <button type="submit" class="btn btn-success ">Enviar</button>
                                         </div>
+                                    </form>
+                                    <form action="/enviar-sinal-arduino" method="POST">
+                                        @csrf
+                                        <button type="submit" class="btn btn-white sync-ard"><i class="fad fa-sync-alt fa-spin" 
+                                        style="--fa-primary-color: #19db70; --fa-secondary-color: #024b23;"></i> Sincronizar Arduino</button>
                                     </form>
                                 </div>
                             </div>
@@ -195,7 +200,7 @@
                         @foreach($Pets as $pet)
                         <h1>Nome: {{ $pet->nome }}</h1>
                         <p>Porte: {{ $pet->porte }} <br>
-                        Idade: {{ $pet->idade }}</p>
+                            Idade: {{ $pet->idade }}</p>
                         @endforeach
                     </div>
                     <div class="col-8">

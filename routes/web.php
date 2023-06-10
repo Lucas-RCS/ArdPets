@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PetController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ArduinoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,5 +45,6 @@ Route::controller(HomeController::class)->group(function(){
 
 Route::post('/pet/store', [PetController::class,'store']);
 
-Route::post('/enviar-sinal', 'ArduinoController@enviarSinal');
+Route::post('/enviar-sinal-arduino', [ArduinoController::class, 'enviarSinal']);
+
 

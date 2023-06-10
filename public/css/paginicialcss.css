@@ -150,6 +150,14 @@ a:hover {
     height: 45px;
     border-radius: 30px;
 }
+.sync-ard{
+    width: 100%;
+    background-color: rgb(240, 240, 240) !important;
+}
+.sync-ard :hover{
+    background-color: red !important;
+}
+
 
 /* agenda */
 .agenda {
@@ -163,7 +171,7 @@ a:hover {
 
 .agenda .container .pet-left {
     background-image: url(../img/pet-carteirinha2.jpg);
-    height: 20vh;
+    height: auto;
     align-self: center;
     border-radius: 10px;
     background-repeat: no-repeat;
