@@ -60,7 +60,7 @@
                     <div class="col-12 topo p-0">
                         <div class="pt-3">
                             <a href="/criar-conta">
-                                <button class="btn btn-outline-secondary px-3 cadastrobtn ">Cadastrar</button>
+                                <button class="btn btn-outline-success px-3 cadastrobtn ">Cadastrar</button>
                             </a>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                     <div class="col-4 offset-2">
 
                         <!-- Botão para acionar modal -->
-                        <button type="button" class="btn btn-primary lermaisbtn" data-toggle="modal" data-target="#ExemploModalCentralizado">
+                        <button type="button" class="btn btn-success lermaisbtn" data-toggle="modal" data-target="#ExemploModalCentralizado">
                             Ler mais
                         </button>
 
@@ -95,11 +95,11 @@
                                     </div>
                                     <div class="modal-body">
                                         <img src="{{ asset('img/logo_teste_escuro.png') }}" class="modalimg" alt="Foto_Logo_ArdPet">
-                                        <p class="p-modal">O ArdPets tem como finalidade amenizar um problema real que acontece há tempos,
+                                        <p class="p-modal">O <b>ArdPets</b> tem como finalidade amenizar um problema real que acontece há tempos,
                                             a falta de administração do tempo, tendo como foco principal contribuir para
                                             alimentação e proporcionar mais segurança aos animais, com um diferencial custo-benefício.
                                             <br>
-                                            Sendo Utiliado por donos de Pets que precisem ganhar um pouco mais de tempo no seu dia a dia,
+                                            Sendo utilizado por donos de <b>Pets</b> que precisem ganhar um pouco mais de <b>tempo no seu dia a dia</b>,
                                             para que eles nao tenham tantas preocupaçoes em alimentar manualmente seus Pets.
 
                                         </p>
